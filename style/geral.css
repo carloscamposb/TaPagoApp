@@ -11,18 +11,13 @@
   --color-toggle:#c2c2c2;
   --color-card: #AED9D0;
   --color-bg-fixed: #edf1f1;
-<<<<<<< HEAD
   --color-light-green: #63c5b0; 
   --color-green-field: #82d4c26b;
   --color-green-fieldDark: #64a5976b;
   --color-red: #b82929;
   --color-light-alert:#a1cc7e;
-  
-  
-=======
    --color-topic-mes:aliceblue;
->>>>>>> 7acb84b9917aa0c2f1cf4a6952acae7a14f99085
-
+  
   --titulos: "Nunito", sans-serif;
   --textos: "Tauri", sans-serif;
 }
