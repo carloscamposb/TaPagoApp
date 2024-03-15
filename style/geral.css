@@ -1,0 +1,50 @@
+/* Fonte importada */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Tauri&display=swap");
+
+/* Cores e fontes selecionadas */
+/* Estilização corpo principal */
+:root {
+  --color-principal: #ffff;
+  --color-detalhes: #0F6351;
+  --color-barrasEbotoes: #0F6351;
+  --color-text: #615B5B;
+  --color-toggle:#c2c2c2;
+  --color-card: #AED9D0;
+  --color-bg-fixed: #edf1f1;
+<<<<<<< HEAD
+  --color-light-green: #63c5b0; 
+  --color-green-field: #82d4c26b;
+  --color-green-fieldDark: #64a5976b;
+  --color-red: #b82929;
+  --color-light-alert:#a1cc7e;
+  
+  
+=======
+   --color-topic-mes:aliceblue;
+>>>>>>> 7acb84b9917aa0c2f1cf4a6952acae7a14f99085
+
+  --titulos: "Nunito", sans-serif;
+  --textos: "Tauri", sans-serif;
+}
+
+
+/* Estilização geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: var(--textos);
+}
+
+/* Estilização do corpo */
+
+
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  margin: 20px 0px;
+  font-family: var(--textos);
+}

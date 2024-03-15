@@ -1,0 +1,305 @@
+
+.header{
+  padding-inline: 32px;
+ }
+ 
+ 
+ .nav{
+
+   height: 80px;
+   position: fixed;
+   display: flex;
+   top: 0px;
+   width: 80%;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 0px;
+   opacity: 100%;
+   background-color: var(--color-principal);
+ }
+ 
+ 
+
+    .header{
+      padding-inline: 32px;
+     }
+     
+     .nav{
+    
+       height: 80px;
+       position: fixed;
+       display: flex;
+       top: 0px;
+       width: 80%;
+       justify-content: space-between;
+       align-items: center;
+       margin-bottom: 0px;
+       opacity: 100%;
+       background-color: var(--color-principal);
+       z-index: 10000;
+     
+     }
+
+
+     .navList li  {
+      padding: 10px 20px;
+      text-align: center;
+     }
+
+     .navList li a {
+      font-size: .7rem;
+     }
+    
+     
+     .navList li a i{
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      
+     }
+    
+
+
+    button.hamburguer{
+      display: block;
+      border: none;
+      background: none;
+      border-top: 3px solid var(--color-text);
+      cursor: pointer;
+      width: 40px;
+      z-index: 9999;
+      
+    }
+    
+    .hamburguer::before{
+      width: 30px;
+      margin: 0 auto;
+    }
+    
+    .hamburguer::after{
+      width: 20px;
+      margin: 0 auto;
+    }
+    
+    .hamburguer::before,
+    .hamburguer::after{
+      content: "";
+      display: block;
+      height: 3px;
+      background: var(--color-text);
+      margin-top: 5px;
+      position: relative;
+      transition: .4s;
+    }
+    
+    .navList{
+      position: fixed;
+      bottom:170px;
+      right: 0px;
+      width: 40vw;
+      height: 80vh;
+       background-color: var( --color-principal); 
+      border-left: 1.01px solid var(--color-toggle);
+      border-bottom: 1px solid var(--color-toggle);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding-top: 65px;
+      border-bottom-left-radius: 8px;
+      gap: 0;
+      clip-path: circle(100px at 90% -80%); /* Esconde o circulo */
+      transition: 1s ease-in-out;
+      pointer-events: none;
+      z-index: 2;
+    }
+    
+    
+    .navList li:nth-child(1) a{
+    transition: .5s .2s;
+    }
+    
+    .navList li:nth-child(1) a{
+      transition: .5s .4s;
+    }
+    
+    .navList li:nth-child(1) a{
+      transition: .5s .6s;
+    }
+    
+    .navList li:nth-child(1) a{
+      transition: .5s .8s;
+    }
+    
+    
+    
+    .actualPage {
+      width: 80%;
+      background-color:var(--color-green-field);
+      border-radius: 8px;
+    }
+    
+    
+    
+    /* Estilo ativo */
+    .nav.active .navList {
+      clip-path: circle(1500px at 90% -80%);
+      pointer-events: all;
+    }
+    
+    
+    
+    .nav.active .hamburguer{
+      position: fixed;
+      top:30px;
+      right: 19px;
+      border-top-color: transparent;
+    
+    }
+    
+    
+    .nav.active .hamburguer::before{
+      transform: rotate(-135deg);
+      bottom: -7px;
+      width: 30px;
+    }
+    
+    .nav.active .hamburguer::after{
+      transform: rotate(135deg);
+      width: 30px;
+    }
+    
+    .logo img{
+      padding-top: 10px;
+      width: 110px;
+    }
+    
+    
+    @media (min-width:1000px){
+    
+      body{
+       background-color: gray;
+       min-height: 600px;
+      }
+   
+    
+       .header{
+         padding-inline:0px;
+        }
+        
+        .nav{
+          height: 80px;
+          position: fixed;
+          display:absolute;
+          top: 0px;
+          width: 100%;
+          justify-content: space-between;
+          gap: 180px;
+        
+        }
+        
+        .navList li a i{
+         position: relative;
+         font-size: 28px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding-top:0px ;
+         
+        }
+       
+       button.hamburguer{
+         display: none;
+       }
+       
+       .hamburguer::before{
+        display: none;
+       }
+       
+       .hamburguer::after{
+        display: none;
+       }
+       
+       .hamburguer::before,
+       .hamburguer::after{
+       display: none;
+       }
+       
+       .navList{
+         position:fixed;
+         top: 0;
+         right: 0;
+         width: 50vw;
+         height: 80px;
+          background-color: var( --color-principal); 
+         border-left: none;
+         border-bottom: none;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         align-items: center;
+         padding-top: 10px;
+         border-bottom-left-radius: 8px;
+         gap: 0;
+         clip-path: none;
+         transition:none;
+         pointer-events: none;
+         z-index: 2;
+       }
+       
+       
+       .navList li:nth-child(1) a{
+       transition: none;
+       }
+       
+       .navList li:nth-child(1) a{
+         transition: none;
+       }
+       
+       .navList li:nth-child(1) a{
+         transition: none;
+       }
+       
+       .navList li:nth-child(1) a{
+         transition: none;
+       }
+       
+       
+       
+       /* Estilo ativo */
+       .nav.active .navList {
+         clip-path: none;
+         pointer-events: none;
+       }
+       
+       
+       
+       .nav.active .hamburguer{
+         display: none;
+       
+       }
+       
+       
+       .nav.active .hamburguer::before{
+         display: none;
+       }
+       
+       .nav.active .hamburguer::after{
+        display: none;
+       }
+       
+       .logo img{
+         padding-top: 20px;
+         width: 210px;
+         padding-left: 50px;
+       }
+       
+       
+     }
+   
+   
+   
+  
+  

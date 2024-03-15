@@ -1,0 +1,135 @@
+/* Estilização contudo principal*/
+.contaner-Ativo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  gap: 50px;
+}
+
+/* Estilização do titulo */
+.tituloLembretesAtivos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.alarmLembrete {
+  width: 20%;
+}
+
+/* Estilização do Card */
+
+.lembreteAtivoDiv {
+  margin-bottom: 50px;
+  background-color: var(--color-principal);
+  border: 2px solid var(--color-configuracao);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.cabecalhoCardAtivo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lembreteAtivoDiv h4 {
+  padding-bottom: 20px;
+  color: var(--color-barrasEbotoes);
+}
+
+.lembreteAtivoDiv ul li {
+  padding-bottom: 10px;
+  color: var(--color-barrasEbotoes);
+}
+
+.lembreteAtivoDiv b {
+  color: var(--color-lembretesAdicionados);
+}
+
+.fa-x {
+  color: var(--color-detalhes);
+}
+
+/* Estilização dos botões do card */
+.jaPagou {
+  margin-top: 20px;
+  height: 30px;
+  display: flex;
+  align-content: end;
+  justify-content: end;
+}
+
+.jaPagouLink {
+  font-size: 1rem;
+  background-color: var(--color-principal);
+  border-radius: 5px;
+  color: var(--color-barrasEbotoes);
+  border: 1px solid var(--color-barrasEbotoes);
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+  transform: 0.3s;
+}
+
+.jaPagouLink:hover {
+  background-color: #1e1e1e;
+  color: var(--color-principal);
+}
+
+
+
+@media (min-width: 700px) {
+
+    .lembreteAtivoDiv {
+      width: 600px;
+    }
+
+    .tituloLembretesAtivos h3{
+        font-size: 2rem;
+    }
+
+}
+
+@media (min-width: 1280px) {
+  .tituloLembretesAtivos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .tituloLembretesAtivos h3 {
+    font-size: 1.9rem;
+  }
+
+  .alarmLembrete {
+    width: 20%;
+  }
+
+  .lembreteAtivoDiv {
+    width: 800px;
+  }
+
+  .cabecalhoCardAtivo h4 {
+    font-size: 1.4rem;
+  }
+
+  .lembreteAtivoDiv ul li {
+    font-size: 1.3rem;
+  }
+
+  .fa-x {
+    padding-right: 50px;
+  }
+
+  .jaPagou {
+    height: 50px;
+  }
+
+  .jaPagouLink {
+    font-size: 1.2rem;
+  }
+}

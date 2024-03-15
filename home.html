@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/iconAba.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/geral.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/navegacaoHome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <title>TaPago: Home </title>
+
+</head>
+    <body>
+        <section class="home">
+        <!-- Inicio da barra de navegação -->
+           <header class="header">
+           
+                <nav class="nav">
+                    <a class="logo" href="/home.html"><img src="./assets/logo.svg" alt="Imagem da Logo" ></a>  
+                    <button class="hamburguer"></button>
+                    <ul class="navList">
+                        <li class="actualPage"><a href="/home.html"><i class="bi bi-house-door"></i> Home </a></li>
+                        <li><a href="#"><i class="bi bi-person"></i> Perfil</a></li>
+                        <li><a href="#"><i class="bi bi-clipboard-data"></i> Análises</a></li>
+                        <li><a href="#"><i class="bi bi-info-circle"></i>Ajuda</a> </li>
+                    </ul>
+                </nav>
+           </header>
+            
+            <!-- final da barra de navegação -->
+
+            <!-- Sessão home --> 
+
+            <div class="contaner">
+                  
+                <div class="imgPerfilDiv">
+                    <img class="imgPerfil" src="./assets/imgPerfil.svg" alt="imagem do usuario">
+                    <p class="textPerfil"> Olá, Marcos</p>
+                    
+                </div>
+            
+                <div class="notificationAdded">
+                    <p class="text">Notificações  adicionadas</p>
+                    <p class="lembreteNumber"> 20</p>
+                    <img  class="lembreteAdd" src="./assets/iconMoney.svg"  alt="lembrete">
+                </div>                    
+                
+                
+                   
+                
+
+                <div class="cardsSessao">
+                    <div class="cardContaner">
+                         <a href="addLembretesCard.html">
+                             <img src="./assets/addNotification.svg" alt=" adicionar lembretes">
+                             <p>Adicionar nova Notificação</p>
+                         </a>
+                         
+                     </div> 
+ 
+                     <div class="cardContaner">
+                         <a href="contasPagas.html">
+                             <img src="./assets/pagosNotification.svg" alt="Acesssar contas pagas">
+                             <p>Ver minha contas pagas</p>
+                         </a>
+                         
+                     </div> 
+                     <div class="cardContaner">
+                         <a href="contasAtrasadas.html">
+                             <img src="./assets/atrasadasNotification.svg" alt="Acessar contas atrasadas">
+                             <p>Ver minhas contas atrasadas</p>
+                         </a>
+                         
+                    </div> 
+                  
+                
+                 </div>
+                 
+                 
+                 <!--Carrosel de notificações  -->
+
+
+               <h4 class="textTitile"> Notificações ativas</h4>     
+                <div class="wrapper"> 
+                    <ul class="carousel active"> 
+                        <li class="card active" id="card"> 
+                            <div class="tituloCard">
+                               <div>
+                                    <p> Nome:  <br> 
+                                     <span>CELPE </span>  
+                                    </p>
+                               </div> 
+                                
+                                <div class="ArrowDown">
+                                    <i class="bi bi-arrow-down-circle"  id= "arrow" ></i>
+                                   
+                                </div>
+
+                            </div>
+                            <ul class="infosCard">
+                                <li>Valor:  <br>
+                                    <span>R$ 130,80</span> 
+                                </li>
+                                <li>Validade: <br>
+                                    <span>12/04/2024</span> 
+                                </li>
+                            </ul> 
+
+                            <div class="groupEndButtons">
+                                <div class="exitIcon">
+                                    <i class="bi bi-x-circle"></i>
+                                </div>
+                                <div>
+                                    <button class="btnTapago"> Ta Pago </button>
+                                </div>
+                            </div>
+                           
+
+                     
+                        </li> 
+
+                        <li class="card active card1" id="card"> 
+                            <div class="tituloCard">
+                                
+                                <div>
+                                    <p>  Nome:  <br> 
+                                        <span>COMPESA </span>  
+                                      </p> 
+                                </div>
+                               
+                                <div class="ArrowDown">
+                                    <i class="bi bi-arrow-down-circle" id="arrow1"></i>
+                                </div>
+                            </div>
+                            <ul class="infosCard">
+                                <li>Valor: <br> 
+                                     <span>R$ 102,76</span> 
+                                    </li>
+                                <li>Validade: <br> 
+                                    <span>18/04/2024</span> 
+                                </li>
+                            </ul> 
+
+                            <div class="groupEndButtons">
+                                <div class="exitIcon">
+                                    <i class="bi bi-x-circle"></i>
+                                </div>
+                                <div>
+                                    <button class="btnTapago"> Ta Pago </button>
+                                </div>
+                            </div>
+                           
+
+                        </li> 
+
+                        <li class="card active card2" id="card"> 
+                     
+                            <div class="tituloCard">
+                                <div>
+                                    <p>  Nome:  <br> 
+                                        <span>MasterCard</span>  
+                                      </p> 
+                                </div>
+                                <div class="ArrowDown">
+                                    <i class="bi bi-arrow-down-circle" id="arrow2"></i>
+                                </div>
+
+                            </div>
+                            <ul class="infosCard">
+                                <li>Valor:  <br>  
+                                    <span>R$ 300,00</span> 
+                                </li>
+                                <li>Validade:  <br>  
+                                    <span>18/04/2024</span> 
+                                </li>
+                            </ul> 
+                            <div class="groupEndButtons">
+                                <div class="exitIcon">
+                                    <i class="bi bi-x-circle"></i>
+                                </div>
+                                <div>
+                                    <button class="btnTapago"> Ta Pago </button>
+                                </div>
+                            </div>
+                           
+                        </li> 
+
+                        
+                        <li class="card active card3" id="card"> 
+                     
+                            <div class="tituloCard">
+                                <div>
+                                    <p>  Nome:  <br> 
+                                        <span>Faculdade SENAC </span>  
+                                      </p> 
+                                </div>
+                                <div class="ArrowDown">
+                                    <i class="bi bi-arrow-down-circle" id="arrow3"></i>
+                                </div>
+                            </div>
+                            <ul class="infosCard">
+                                <li>Valor:  <br>  
+                                    <span> R$ 567,56</span> 
+                                </li>
+                                <li>Validade:  <br>  
+                                    <span> 30/04/2024</span> 
+                                </li>
+                            </ul> 
+                            <div class="groupEndButtons">
+                                <div class="exitIcon">
+                                    <i class="bi bi-x-circle"></i>
+                                </div>
+                                <div>
+                                    <button class="btnTapago"> Ta Pago </button>
+                                </div>
+                            </div>
+                           
+                        </li> 
+                      
+                    </ul> 
+
+                </div>
+
+
+<<<<<<< HEAD
+              
+
+=======
+                <a class="linkAdd" href="./addLembretesCard.html">
+                    <div class="adicionarLembretesCard">
+                        <p>Adicionar meus lembrete$</p>
+                        <img class="imgLinkHome" src="./assets/addLink.svg" alt="Link para contas atrasadas">
+                    </div>
+                </a>
+>>>>>>> 7acb84b9917aa0c2f1cf4a6952acae7a14f99085
+
+
+                
+            </div>
+        
+        </section> 
+
+        
+        <script src="./scripts/script.js"></script>
+
+        
+    </body>
+</html>

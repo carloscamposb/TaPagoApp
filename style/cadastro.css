@@ -1,0 +1,52 @@
+/* Formatação inical do cadastro */
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+
+/* Botão de voltar */
+
+.back div{
+    width: 100%;
+    position: relative;
+    background-color: #615B5B;
+}
+
+.back .backLink {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px 20px 20px;
+
+    background-color:var(--color-card);
+    z-index: -1;
+    border-bottom-right-radius: 20px;
+}
+
+.back .backLink .bi-arrow-left-circle{
+    font-size: 30px;
+    color: var(--color-text);
+}
+
+/* Logo cadatstro*/
+ .back .imgPagoCadastro{
+     position: absolute;
+     width: 140px;
+ }
+
+
+ .mainCadastro{
+    position: relative;
+    margin-top: 100px;
+ 
+ }
+
+.imgCadastro{
+    padding-left: 15px;
+    margin-bottom: 30px;
+}

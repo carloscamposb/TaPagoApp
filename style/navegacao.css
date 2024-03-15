@@ -1,0 +1,297 @@
+/* LogoInicio */
+
+.logoInicio {
+  width: 50%;
+  display: block;
+}
+
+/* Barra de navegação */
+nav {
+  margin-top: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.groupNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  z-index: 999;
+}
+
+.groupNav p {
+  font-size: 1.4rem;
+  padding: 10px;
+  color: #1e1e1e;
+}
+
+.groupNav a {
+  color: var(--color-principal);
+}
+
+.groupNav img,
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.groupNav li a img {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoNav {
+  width: 280px;
+  padding-right: 20px;
+}
+
+.menu-lateral__link {
+  display: flex;
+  align-items: center;
+}
+
+/* link ativo */
+.groupNav .ativo {
+  background-color: #e9e3e3;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.groupNav .menu-lateral__link:hover {
+  transform: 0.5s;
+  background-color: #e9e3e3;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+/* Recursos inativos ate a responsividade ideal */
+i#burguer {
+  display: none;
+}
+
+.imgLogo {
+  display: none;
+}
+
+@media (max-width: 1497px) {
+  .groupNav li a img {
+    width: 35px;
+  }
+
+  .groupNav p {
+    font-size: 0.9rem;
+    padding: 20px;
+  }
+
+  .logoNav {
+    width: 190px;
+  }
+}
+
+@media (max-width: 1025px) {
+  nav {
+    width: 90%;
+  }
+
+  .groupNav li a img {
+    width: 30px;
+  }
+
+  .groupNav p {
+    font-size: 0.9rem;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1102px) {
+  .logoNav {
+    width: 180px;
+  }
+}
+
+@media (max-width: 970px) {
+  .groupNav p {
+    padding: 20px;
+  }
+
+  .logoNav {
+    width: 100px;
+  }
+
+  .groupNav li a img {
+    width: 20px;
+  }
+
+  .groupNav .ativo {
+    padding: 5px 5px 0px;
+  }
+
+  .groupNav .menu-lateral__link:hover {
+    padding: 5px 5px 0px;
+  }
+}
+
+@media (max-width: 812px) {
+  .groupNav p {
+    font-size: 0.6rem;
+  }
+
+  .logoNav {
+    width: 150px;
+  }
+}
+
+/* Responsividade menu Hamburguer */
+
+@media (max-width: 800px) {
+  body {
+    margin: 0px;
+    font-family: var(--textos);
+  }
+
+  i#burguer {
+    display: block;
+    color: var(--color-detalhes);
+    background-color: var(--color-barrasEbotoes);
+    padding: 15px 0px 20px 20px;
+    left: 0;
+    width: 60px;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+
+  i#burguer:hover {
+    background-color: var(--color-detalhes);
+    color: var(--color-barrasEbotoes);
+  }
+
+  nav {
+    width: 40%;
+    background-color: #ffff;
+    margin: 0;
+  }
+
+  .menu-lateral__link {
+    display: flex;
+    align-items: center;
+  }
+
+  .groupNav {
+    position: absolute;
+    display: block;
+    flex-direction: column;
+    left: 0;
+    gap: 30px;
+    width: 25%;
+    padding: 20px;
+    border-bottom-right-radius: 8px;
+    margin-left: 0;
+    background-color: var(--color-barrasEbotoes);
+  }
+
+  .groupNav .logoNav {
+    display: none;
+  }
+
+  .groupNav img,
+  a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .groupNav li a img {
+    width: 23px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .groupNav p {
+    font-size: 0.6rem;
+    margin-top: 5px;
+    color: var(--color-principal);
+  }
+
+  .groupNav {
+    display: none;
+  }
+
+  .groupNav .menu-lateral__link:hover {
+    transform: 0.5s;
+    background-color: #e9e3e3;
+    padding: 5px;
+    border-radius: 8px;
+  }
+
+  .groupNav .ativo {
+    background-color: #e9e3e3;
+    width: min-content;
+    border-radius: 8px;
+  }
+
+  .groupNav .menu-lateral__link:hover {
+    transform: 0.3s;
+    background-color: var(--color-barrasEbotoes);
+    border-radius: 8px;
+  }
+
+  .groupNav .ativo:hover {
+    background-color: #e9e3e3;
+    width: min-content;
+    border-radius: 8px;
+  }
+
+  .groupNav .ativo p {
+    color: var(--color-barrasEbotoes);
+  }
+
+  .imgLogo {
+    position: absolute;
+    display: block;
+    right: -20%;
+    padding-top: 80px;
+    top: 0%;
+    width: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  .groupNav {
+    width: 25%;
+  
+  }
+
+  
+  .groupNav li a img {
+    width: 35px;
+  }
+
+
+}
+
+
+
+@media (max-width: 495px) {
+  .groupNav {
+    width: 30%;
+  
+  }
+
+  
+  .groupNav li a img {
+    width: 35px;
+  }
+
+
+}
+
+@media (max-width: 359px) {
+  .groupNav {
+    width: 40%;
+  }
+}

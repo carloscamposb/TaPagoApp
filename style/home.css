@@ -1,0 +1,296 @@
+/* Parte principal do home */
+
+
+
+
+
+/* Estilização do macro da capa */
+
+.contaner {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+  margin: 40px auto;
+ 
+}
+
+
+/* Estilização do perfilHome */
+
+.imgPerfilDiv{
+  text-align: center;
+  font-size: 16px;
+  color: var(--color-text);
+  margin-top: 70px;
+}
+
+.imgPerfil{
+  width: 115px;
+}
+
+
+/* lembretes adicionados */
+
+.contaner .notificationAdded {
+  position: relative;
+  background-color: var(--color-card);
+  display: flex;
+  align-items: center;
+  padding: 20px; 
+  justify-content: space-between;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+.notificationAdded .text {
+  text-align: center;
+  width: 60%;
+  font-size: 1rem;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.notificationAdded .lembreteNumber {
+  font-size: 40px;
+  color: var(--color-principal);
+  padding-right: 25px;
+  z-index: 1;
+}
+
+.contaner .lembreteAdd {
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-60%);
+  font-size: 13px;
+}
+
+.textTitile{
+  margin-top: 20px;
+  color: var(--color-text);
+}
+
+
+
+
+
+
+/* cards sessão acessar novas notificações, ContasPagas e Contas atrasadas */
+
+.cardsSessao{
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.cardContaner img{
+ width: 90px;
+ padding: 0px 5px;
+ display: block;
+ margin: 0 auto;
+}
+
+.cardContaner p{
+  text-align: center;
+  font-size: .7rem;
+}
+
+
+
+/* cards notificações ativas */
+
+.wrapper { 
+  max-width: 1100px; 
+  width: 100%; 
+  margin-bottom: 10px;
+  position: relative; 
+} 
+
+
+.carousel{
+  height: 40px;
+}
+
+.wrapper .carousel { 
+  display: grid; 
+  grid-auto-flow: column; 
+  grid-auto-columns: calc((100% / 3) - 12px); 
+  gap: 16px; 
+  overflow-x: auto; 
+  /* scroll-snap-type: x mandatory;   */
+  scroll-behavior: smooth; 
+  /* scrollbar-width: 0;  */
+} 
+
+.carousel::-webkit-scrollbar { 
+  display: none; 
+} 
+
+.carousel :where(.card, .img) { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+} 
+
+.carousel.dragging { 
+  scroll-snap-type: none; 
+  scroll-behavior: auto; 
+} 
+
+.carousel.no-transition { 
+  scroll-behavior: auto; 
+} 
+
+.carousel.dragging .card { 
+  cursor: grab; 
+  user-select: none; 
+} 
+
+.carousel .card { 
+  height:240px; 
+  background: var(--color-principal);
+  border: 1px solid var(--color-barrasEbotoes);
+  border-radius: 8px; 
+  display: flex; 
+  cursor: pointer; 
+  width: 98%; 
+  padding-bottom: 180px;
+  padding-left: 10px; 
+  align-items: flex-start; 
+  flex-direction: column; 
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}  
+
+
+
+
+.tituloCard{
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-top: 50px;
+}
+
+ .exitIcon{
+  width: 30%;
+  margin-top: 20px;
+  padding: 20px 0px 0px ;
+}
+
+
+.bi-arrow-down-circle{
+  position: absolute;
+  font-size: 1.5rem;
+  color: var(--color-barrasEbotoes);
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  border-bottom-left-radius: 8px;
+  background-color: var(--color-light-green);
+}
+
+
+.groupEndButtons{
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 5px 0px 5px 10px;
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+
+
+.bi-x-circle{
+  position: absolute;
+  font-size: 1.5rem;
+  bottom: 0;
+  left: 0;
+  color: var(--color-barrasEbotoes);
+}
+
+.btnTapago{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 1px solid var(--color-barrasEbotoes);
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-image: url(../assets/fundoBotao.png);
+  background-size:cover;
+  background-position: 80% -45px;
+  background-repeat: no-repeat;
+  
+}
+
+
+
+
+
+.tituloCard p { 
+  font-weight: 500; 
+  font-size: .8rem;
+  margin-top: 120px;
+  
+}
+
+
+.card li { 
+  font-weight: 500; 
+  font-size: .8rem; 
+  margin: 20px 0 5px; 
+} 
+
+.card span { 
+  color:var( --color-light-green); 
+  font-size: .8rem; 
+  
+
+}
+
+.card.active{
+    height: 60px;
+    padding-bottom: 0px;  
+  } 
+   
+
+  .carousel.active{
+    height: auto;
+  }
+  
+
+
+
+
+/* responsividade */
+
+
+@media screen and (max-width: 900px) { 
+  .wrapper .carousel { 
+      grid-auto-columns: calc((100% / 3) - 9px); 
+
+  } 
+} 
+
+@media screen and (max-width: 600px) { 
+  .wrapper .carousel { 
+      grid-auto-columns: 60%; 
+
+  } 
+}
+    
+@media screen and (max-width: 320px) { 
+  .wrapper .carousel { 
+      grid-auto-columns: 70%; 
+
+  } 
+}

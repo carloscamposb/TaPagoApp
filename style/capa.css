@@ -1,0 +1,396 @@
+
+
+
+/* Estilização do macro da capa */
+.capa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+.imgPago{
+  width: 250px;
+  margin: 0 auto;
+ 
+}
+
+
+
+/* Estilização do subtitulo */
+.subtitulo {
+  margin-top: 10px;
+  color: var(--color-barrasEbotoes);
+  font-family: var(--textos);
+  font-size: 0.9rem;
+  color: #6A6A6A;
+  animation-name: slide;
+  animation-duration: 3s;
+  transition: .5s;
+}
+
+@keyframes slide{
+  from{
+    margin-right: 10%;
+    width: 200%;
+  }
+
+  to{
+    margin-right: -10%;
+    width: 83%;
+  }
+}
+
+
+
+/* Estilização da iamgem da capa e formulario (conteúdos principais) */
+.mainCapa {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+
+
+
+/* Estilização da imagem da capa*/
+.divImagemCapa {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+
+/* Estilização do formulario da capa */
+
+.wrapper {
+  margin-top: 10px;
+  font-size: 0.7rem;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 80%;
+  height: 40px;
+  margin: 10px auto;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  font-size: 0.9rem;
+  color: var(--color-barrasEbotoes);
+  padding: 20px 45px 18px 20px;
+  outline: none;
+  border: none;
+  background: #82d4c26b;
+  border-radius: 5px;
+}
+
+.input-box input:focus {
+  border: 2px solid var(--color-barrasEbotoes);
+}
+
+.input-box input::placeholder {
+  color: var(--color-barrasEbotoes);
+}
+
+/* Estilização dos icones dos inputs */
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: var(--color-detalhes);
+}
+
+
+/* Estilização da área: Lembrar */
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3px 0px 0px;
+}
+
+.rememberPassword{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 5px;
+}
+
+
+.remember-forgot label input {
+  accent-color: var(--color-texto);
+
+}
+
+.remember-forgot a {
+  color: var(--color-texto);
+  text-decoration: none;
+  padding-top: 2px;
+  text-decoration: underline;
+
+}
+
+
+#check{
+  display: none;
+
+}
+
+.switch{
+  position: relative;
+  background-color:var(--color-toggle);
+  width: 50px;
+  height: 25px;
+  display: flex;
+  transition: all .5s ease-in-out;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.slider{
+  position: absolute;
+  background-color: var(--color-principal);
+  border-radius: 50%;
+  bottom: 2px;
+  width: 20px;
+  height: 20px;
+  transition: all .5s ease-in-out;
+}
+
+#check:checked ~ .switch{
+  background-color: var(--color-green-fieldDark);
+}
+
+#check:checked ~ .switch .slider{
+ transform: translateX(30px);
+}
+
+/*Estilização do botão de entrada  */
+.wrapper .btnDiv {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 28px;
+}
+
+.wrapper .btn {
+  margin-top: 20px;
+  width: 35%;
+  height: 30px;
+  background: var(--color-barrasEbotoes);
+  color: var(--color-principal);
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-align: center;
+  padding-top: 6px;
+  text-decoration: none;
+}
+
+.wrapper .btn:hover {
+  background-color: var(--color-detalhes);
+  color: #1e1e1e;
+  font-weight: 600;
+}
+
+/* Estilização de entrada via alternativa */
+.alternativeAccessDiv {
+  margin: 10px auto;
+  width: 80%;
+}
+
+.alternativeAccessDiv .secundaryAccess {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.secundaryAccess li a img {
+  width: 80%;
+  
+}
+
+.secundaryAccess li:hover {
+  transform: scale(1.1);
+  background-position: -60px;
+}
+
+.alternativeAccessDiv p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  
+}
+
+.firstAccessDiv{
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+  font-size: .9rem;
+  padding-top: 20px;
+  color: var(--color-barrasEbotoes);
+  text-decoration: underline;
+}
+
+/* 
+div class="firstAccessDiv">
+            <a class="firstAccess" href="#">Primeiro Acesso</a>
+*/
+
+
+
+/* Responsividade */
+
+@media (min-width: 700px) {
+  .mainCapa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 70px;
+    width: 96vw;
+  }
+
+  .divImagemCapa {
+    display: flex;
+    justify-content: center;
+    width: 150%;
+  }
+
+  .imgCapa {
+    width: 100%;
+  }
+
+  .subtitulo {
+    font-size: 1.5rem;
+  }
+
+  .wrapper {
+    margin-top: 20px;
+    font-size: 0.7rem;
+    width: 100%;
+  }
+
+  .imgLembretes {
+    width: 60%;
+  }
+
+  .secundaryAccess li a img {
+    width: 90%;
+    text-align: center;
+  }
+
+
+  /* Estilização do subtitulo */
+.subtitulo {
+  animation-name: none;
+  animation-duration: none;
+  transition: none;
+}
+
+}
+
+@media (min-width: 900px) {
+  .mainCapa {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .imgLembretes {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1356px) {
+  .mainCapa {
+    gap: 90px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .imgLembretes {
+    width: 750px;
+  }
+
+  .imgLembretes {
+    width: 500px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .mainCapa {
+    max-width: 1500px;
+  }
+
+  .imgLembretes {
+    width: 1000px;
+  }
+
+  .subtitulo {
+    font-size: 2.5rem;
+  }
+
+  .wrapper {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+
+  .wrapper .input-box {
+    height: 80px;
+    margin-top: 30px;
+  }
+
+  .input-box input {
+    font-size: 1.8rem;
+  }
+
+  .input-box i {
+    font-size: 1.7rem;
+  }
+
+  .checkbox {
+    height: 25px;
+    width: 25px;
+  }
+
+  .wrapper .btn {
+    margin-top: 60px;
+    height: 50px;
+    font-size: 1.6rem;
+  }
+
+  /* Estilização de entrada via alternativa */
+  .alternativeAccessDiv {
+    margin-top: 80px;
+  }
+
+  .secundaryAccess li a img {
+    width: 100px;
+  }
+
+  .secundaryAccess li:hover {
+    transform: scale(1.1);
+    background-position: -60px;
+  }
+
+  .alternativeAccessDiv p {
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+  }
+}

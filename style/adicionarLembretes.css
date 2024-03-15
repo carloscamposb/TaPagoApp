@@ -1,0 +1,221 @@
+:root {
+  --color-principal: #ffff;
+  --color-detalhes: #0F6351;
+  --color-barrasEbotoes: #0F6351;
+  --color-text: #615B5B;
+  --color-toggle:#c2c2c2;
+  --color-card: #AED9D0;
+  --color-bg-fixed: #edf1f1;
+  --color-light-green: #63c5b0; 
+  --color-green-field: #82d4c26b;
+  --color-green-fieldDark: #64a5976b;
+  
+  
+
+  --titulos: "Nunito", sans-serif;
+  --textos: "Tauri", sans-serif;
+}
+
+
+
+
+/* Estilização corpo principal */
+.contaner-Add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  position: relative;
+}
+
+/* Estilização formulario de Adição de lembretes */
+.wrapper-add {
+  margin-top: 140px;
+  font-size: 0.7rem;
+  position: fixed;
+  color: var(--color-text);
+  width: 100%;
+
+}
+
+.wrapper-add .input-box-add {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  padding-bottom: 80px;
+  margin: 10px auto;
+}
+
+.input-box-add input {
+  width: 100%;
+  height: 100%;
+  font-size: 0.8rem;
+  color: var(--color-green-fieldDark);
+  padding: 20px 45px 18px 20px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--color-barrasEbotoes);
+}
+
+
+.input-box-add .bgNome {
+ background-color: var(--color-principal);
+
+}
+
+.input-box-add input::placeholder {
+  color: var(--color-barrasEbotoes);
+}
+
+/* Estilização dos botões */
+.btnDivAdd {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+.btnDivAddEdit{
+  display: flex;
+  justify-content: end;
+  margin-top: 5px;
+}
+
+.btn-Edit{
+  background-color: var(--color-barrasEbotoes);
+  color: var(--color-principal);
+}
+
+
+.btnDivAdd {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+.btn-Add {
+  padding: 10px;
+  width: 40%;
+  border-radius: 5px;
+  border: none;
+}
+
+.btnConfirm {
+  background-color: var(--color-barrasEbotoes);
+  color: var(--color-principal);
+}
+
+.btnConfirm:hover {
+  background-color: var(--color-detalhes);
+  color: var(--color-barrasEbotoes);
+  font-weight: 600;
+}
+
+.btnRefazer {
+  background-color: var(--color-principal);
+  border: 1px solid var(--color-barrasEbotoes);
+}
+
+/* Estilização de adicionar mais lembretes - Card */
+.adicionarLembretesExtras {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 20px;
+margin: 0 auto;
+text-align: center;
+}
+
+
+.adicionarLembretesExtras a{
+  display: flex;
+  flex-direction: column;
+  background-color: #effdede8;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  color: var(--color-barrasEbotoes);
+  }
+  
+
+
+  .adicionarLembretesExtras .bi-plus-circle-fill{
+       font-size: 30px;
+    }
+    
+
+
+.adicionarLembretesExtras p {
+  width: 70%;
+  text-align: center;
+  font-size: .8rem;
+}
+
+.fields-add {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.fields-add input {
+  background-color: var(--color-bg-fixed);
+  color: var(--color-text-fixed);
+  font-weight: 600;
+}
+
+/* responsividade */
+
+@media (min-width: 1300px) {
+  .wrapper-add {
+    margin-top: 20px;
+    width: 500px;
+    font-size: 0.7rem;
+  }
+
+  .btn-Add {
+    width: 30%;
+  }
+
+  .adicionarLembretesExtras {
+    width: 350px;
+  }
+}
+
+@media (min-width: 1058px) {
+  .wrapper-add {
+    margin-top: 100px;
+    width: 800px;
+    font-size: 1rem;
+  }
+
+  .wrapper-add .input-box-add {
+    height: 130px;
+  }
+
+  .input-box-add input {
+    font-size: 1.5rem;
+  }
+
+  .btn-Add {
+    font-size: 1.5rem;
+  }
+
+  .btnConfirm {
+    background-color: var(--color-barrasEbotoes);
+    color: var(--color-principal);
+    height: 60px;
+  }
+
+  .adicionarLembretesExtras {
+    margin-top: 40px;
+    width: 600px;
+    height: 150px;
+  }
+
+  .adicionarLembretesExtras p {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+}

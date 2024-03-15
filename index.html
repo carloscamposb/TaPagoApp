@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/iconAba.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/geral.css">
+    <link rel="stylesheet" href="./style/capa.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>App Pago: Bem-vind@!</title>
+
+</head>
+<body>
+    
+    <!-- Inicio da área inicial: Sessão de entrada -->
+    <section class="capa">
+
+        <img class="imgPago" src="./assets/logo.svg" alt="titulo da Aplicação">
+        <h3 class="subtitulo">A sua vida financeira mais equilibrada</h3>
+        
+        <div class="mainCapa">
+            <div class="divImagemCapa">
+                <img class="imgCapa" src="./assets/ilustraCapa.svg" alt="Imagem da capa">
+            </div>
+       
+            <div class="wrapper">
+
+                <!--Formulário de acesso -->
+
+                <form action="">
+                    <div class="fields">
+                        
+                        <div class="input-box">
+                            <input type="email" name="name" placeholder=" E-mail"  required />
+                            <i class="fa-regular fa-user" ></i>
+                        </div>
+
+                        <div class="input-box">
+                            <input type="password" name="password" id="senha" placeholder=" Senha"  required />
+                            <i id="btnSenha" class="bi bi-eye" onclick="showing()"></i>
+                            <!-- <i id="btnSenha" class="fa-regular fa-eye" onclick="showing()"></i> -->
+                            <!-- <i class="fa-regular fa-eye-slash"></i> -->
+                        </div>
+
+                        <div class="remember-forgot">
+                            <div class="rememberPassword">
+                                <input type="checkbox" id="check">Lembrar
+                                <label for="check" class="switch">
+                                    <span class="slider"></span>
+                                </label>
+                                
+                            </div>     
+                               
+
+                            <a href="#">Esqueceu a senha? </a>
+                        </div>
+                        
+                        <div class="btnDiv">
+                            <a href="home.html" class="btn"> Entrar </a>
+                        </div>
+                      
+                        <!-- Acesso alternativo -->
+                        <div class="alternativeAccessDiv" >
+                            <p> Acesse via: </p>
+                            <ul class="secundaryAccess">
+                                <li><a href="#"><img src="./assets/socialMediaGoogle.svg" alt="acesso registro google"></a> </li>
+                                <li><a href="#"><img src="./assets/socialMediaFacebbok.svg "" alt= "acesso registro facebook"></a> </li>
+                                <li><a href="#"><img src="./assets/socialMediaApple.svg" alt="acesso registro apple"></a> </li>
+                           </ul> 
+                             
+                           <div class="firstAccessDiv">
+                            <a class="firstAccess" href="cadastro.html">Primeiro Acesso</a>
+                           </div>
+                        </div>
+                       
+                    </div>
+                
+                </form>
+            </div>
+           
+        </div>
+
+    </section>
+    
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
