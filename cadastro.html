@@ -8,31 +8,38 @@
     <link rel="stylesheet" href="./style/capa.css">
     <link rel="stylesheet" href="./style/cadastro.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <title>TaPago: Primeiro Acesso </title>
 </head>
 <body>
+
+    <!-- Inicio da área de cadastro -->
     <section class="cadastro">
+        
+         <!-- área de retorno para tela inical -->
         <div class="back">
-          <a class="backLink" href="index.html"><i class="bi bi-arrow-left-circle"></i></a>
+            <a class="backLink" href="index.html">
+                <i class="bi bi-arrow-left-circle"></i>
+            </a>
         
-        <div class="imgLogo">
-            <img class="imgPagoCadastro" src="./assets/logo.svg" alt="titulo da Aplicação">
-        </div>
-        
+            <div>
+                <h1 class="logoTitle logoSecundaryPage">TaPago</h1>
+            </div>
         </div>  
       
        
         
+         <!-- área de conteúdo -->
         <div class="mainCadastro">
-            <div class="divImagemCapa">
-                <img class="imgCadastro" src="./assets/imgCadastro.svg" alt="Imagem da capa">
+            <div class="divImagemCadastro">
+                <img class="imgCadastro" src="./assets/logoCadastro.svg" alt="Imagem da capa">
             </div>
        
             <div class="wrapper">
 
                 <!--Formulário de acesso -->
 
-                <form action="">
+                <form action="" method="post">
                     <div class="fields">
                         
 
@@ -42,7 +49,7 @@
                         </div>
 
                         <div class="input-box">
-                            <input type="email" name="name" placeholder=" E-mail"  required />
+                            <input type="email" name="name" placeholder=" E-mail"  autocomplete="email" required />
                             <i class="fa-regular fa-user" ></i>
                         </div>
 
@@ -82,8 +89,8 @@
 
     </section>
     
-
-    <script src="./scripts/script.js"></script>
+<!-- Link de JS -->
+    <script src="./scripts/scriptSenha.js"></script>
 </body>
 </html>
 

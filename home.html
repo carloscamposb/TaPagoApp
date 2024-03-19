@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/iconAba.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logoAba.svg" type="image/x-icon">
     <link rel="stylesheet" href="./style/geral.css">
     <link rel="stylesheet" href="./style/home.css">
-    <link rel="stylesheet" href="./style/navegacaoHome.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./style/navegacao.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
     <title>TaPago: Home </title>
@@ -16,61 +15,75 @@
     <body>
         <section class="home">
         <!-- Inicio da barra de navegação -->
-           <header class="header">
-           
-                <nav class="nav">
-                    <a class="logo" href="/home.html"><img src="./assets/logo.svg" alt="Imagem da Logo" ></a>  
-                    <button class="hamburguer"></button>
-                    <ul class="navList">
-                        <li class="actualPage"><a href="/home.html"><i class="bi bi-house-door"></i> Home </a></li>
-                        <li><a href="#"><i class="bi bi-person"></i> Perfil</a></li>
-                        <li><a href="#"><i class="bi bi-clipboard-data"></i> Análises</a></li>
-                        <li><a href="#"><i class="bi bi-info-circle"></i>Ajuda</a> </li>
-                    </ul>
-                </nav>
-           </header>
+              
+        <header>
+            <nav>
+                <a href="/home.html"><div class="logo"> TaPago </div></a>
+                <div class="menuBtn">
+                    <i class="bi bi-list" onclick="menuShow()"></i>
+                </div>
+
+                <ul>
+                    <li class="active"><a href="/home.html" ><i class="bi bi-house"></i> Home </a></li>
+                    <li><a href="#"><i class="bi bi-file-person"></i> Perfil </a></li>
+                    <li><a href="#"><i class="bi bi-info-circle"></i> Ajuda </a></li>
+                </ul>
+              </nav>
+        </header>
+         
             
-            <!-- final da barra de navegação -->
+            <!-- final da barra de navegação --> 
 
             <!-- Sessão home --> 
 
             <div class="contaner">
+
+                <!-- área de perfil -->
                   
                 <div class="imgPerfilDiv">
-                    <img class="imgPerfil" src="./assets/imgPerfil.svg" alt="imagem do usuario">
-                    <p class="textPerfil"> Olá, Marcos</p>
+                    <i class="bi bi-person-circle"></i>
+                    <p class="textPerfil"> <b>Olá, Carlos Campos</b></p>
                     
+                    <div class="btnLink">
+                        <a href="#" class="btnEditar"> Editar </a>
+                    </div>
+                 
                 </div>
-            
-                <div class="notificationAdded">
-                    <p class="text">Notificações  adicionadas</p>
-                    <p class="lembreteNumber"> 20</p>
-                    <img  class="lembreteAdd" src="./assets/iconMoney.svg"  alt="lembrete">
-                </div>                    
+
+                <!-- Resumo de notificações -->
+
+                <div class="borderNotification">
+                    <div class="notificationAdded">
+                        <p class="textAdd">Notificações adicionadas</p>
+                        <p class="lembreteNumber"> 20</p>
+                        <img  class="lembreteAdd" src="./assets/perfilLembretesAdd.svg"  alt="lembrete">
+                    </div>  
+                </div>
+                                    
+                    
                 
-                
-                   
+                   <!-- Sessão de adição, acessar: contas pagas e contas atrasadas  -->
                 
 
                 <div class="cardsSessao">
                     <div class="cardContaner">
-                         <a href="addLembretesCard.html">
-                             <img src="./assets/addNotification.svg" alt=" adicionar lembretes">
-                             <p>Adicionar nova Notificação</p>
+                         <a href="adicionar.html">
+                             <img src="./assets/imagemAdicionar.svg" alt=" adicionar lembretes">
+                             <p>Adicionar Notificação</p>
                          </a>
                          
                      </div> 
  
                      <div class="cardContaner">
                          <a href="contasPagas.html">
-                             <img src="./assets/pagosNotification.svg" alt="Acesssar contas pagas">
-                             <p>Ver minha contas pagas</p>
+                             <img src="./assets/imagemConferirPositivo.svg" alt="Acesssar contas pagas">
+                             <p>Ver minhas contas pagas</p>
                          </a>
                          
                      </div> 
                      <div class="cardContaner">
                          <a href="contasAtrasadas.html">
-                             <img src="./assets/atrasadasNotification.svg" alt="Acessar contas atrasadas">
+                             <img src="./assets/imagemConferirNegativo.svg" alt="Acessar contas atrasadas">
                              <p>Ver minhas contas atrasadas</p>
                          </a>
                          
@@ -82,30 +95,33 @@
                  
                  <!--Carrosel de notificações  -->
 
-
-               <h4 class="textTitile"> Notificações ativas</h4>     
+              <div>
+                <h5 class="textTitle"> Notificações ativas</h45>   
+              </div> 
+        
+               
                 <div class="wrapper"> 
                     <ul class="carousel active"> 
                         <li class="card active" id="card"> 
                             <div class="tituloCard">
                                <div>
                                     <p> Nome:  <br> 
-                                     <span>CELPE </span>  
+                                     <b>CELPE </b>  
                                     </p>
                                </div> 
                                 
                                 <div class="ArrowDown">
-                                    <i class="bi bi-arrow-down-circle"  id= "arrow" ></i>
+                                    <i class="bi bi-arrow-down-circle btnSeta"  id= "arrow" ></i>
                                    
                                 </div>
 
                             </div>
                             <ul class="infosCard">
                                 <li>Valor:  <br>
-                                    <span>R$ 130,80</span> 
+                                    <b>R$ 130,80</b> 
                                 </li>
                                 <li>Validade: <br>
-                                    <span>12/04/2024</span> 
+                                    <span><b>12/04/2024</b></span> 
                                 </li>
                             </ul> 
 
@@ -127,20 +143,20 @@
                                 
                                 <div>
                                     <p>  Nome:  <br> 
-                                        <span>COMPESA </span>  
-                                      </p> 
+                                        <b>COMPESA </b>
+                                    </p> 
                                 </div>
                                
                                 <div class="ArrowDown">
-                                    <i class="bi bi-arrow-down-circle" id="arrow1"></i>
+                                    <i class="bi bi-arrow-down-circle btnSeta" id="arrow1"></i>
                                 </div>
                             </div>
                             <ul class="infosCard">
                                 <li>Valor: <br> 
-                                     <span>R$ 102,76</span> 
+                                     <b>R$ 102,76</b> 
                                     </li>
                                 <li>Validade: <br> 
-                                    <span>18/04/2024</span> 
+                                    <span><b>18/04/2024</b></span> 
                                 </li>
                             </ul> 
 
@@ -161,20 +177,20 @@
                             <div class="tituloCard">
                                 <div>
                                     <p>  Nome:  <br> 
-                                        <span>MasterCard</span>  
+                                        <b>MasterCard</b>  
                                       </p> 
                                 </div>
                                 <div class="ArrowDown">
-                                    <i class="bi bi-arrow-down-circle" id="arrow2"></i>
+                                    <i class="bi bi-arrow-down-circle btnSeta" id="arrow2"></i>
                                 </div>
 
                             </div>
                             <ul class="infosCard">
                                 <li>Valor:  <br>  
-                                    <span>R$ 300,00</span> 
+                                    <b>R$ 300,00</b> 
                                 </li>
                                 <li>Validade:  <br>  
-                                    <span>18/04/2024</span> 
+                                    <span><b>18/04/2024</b></span> 
                                 </li>
                             </ul> 
                             <div class="groupEndButtons">
@@ -194,19 +210,19 @@
                             <div class="tituloCard">
                                 <div>
                                     <p>  Nome:  <br> 
-                                        <span>Faculdade SENAC </span>  
+                                        <b>Faculdade SENAC </b>  
                                       </p> 
                                 </div>
                                 <div class="ArrowDown">
-                                    <i class="bi bi-arrow-down-circle" id="arrow3"></i>
+                                    <i class="bi bi-arrow-down-circle btnSeta" id="arrow3"></i>
                                 </div>
                             </div>
                             <ul class="infosCard">
                                 <li>Valor:  <br>  
-                                    <span> R$ 567,56</span> 
+                                    <b> R$ 567,56</b> 
                                 </li>
                                 <li>Validade:  <br>  
-                                    <span> 30/04/2024</span> 
+                                    <span> <b>30/04/2024</b></span> 
                                 </li>
                             </ul> 
                             <div class="groupEndButtons">
@@ -228,9 +244,10 @@
         
         </section> 
 
-        
-        <script src="./scripts/script.js"></script>
+        <!-- link de JS -->
 
+        <script src="./scripts/navBar.js"></script>
+        <script src="./scripts/scriptCarrosel.js"></script>
         
     </body>
 </html>

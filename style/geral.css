@@ -1,25 +1,24 @@
 /* Fonte importada */
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Tauri&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Cores e fontes selecionadas */
 /* Estilização corpo principal */
+
 :root {
-  --color-principal: #ffff;
-  --color-detalhes: #0F6351;
-  --color-barrasEbotoes: #0F6351;
-  --color-text: #615B5B;
-  --color-toggle:#c2c2c2;
-  --color-card: #AED9D0;
-  --color-bg-fixed: #edf1f1;
-  --color-light-green: #63c5b0; 
-  --color-green-field: #82d4c26b;
-  --color-green-fieldDark: #64a5976b;
-  --color-red: #b82929;
-  --color-light-alert:#a1cc7e;
-   --color-topic-mes:aliceblue;
+  --primary-color: #EDE9DD;
+  --white-color: #ffff;
+  --detail-color: #EFA40F;
+  --color-logo: #c0651a;
+  --detail-variation-dark:#dd8237;
+  --gradient-color-orange: linear-gradient(98deg, #EB9B15 1.78%, #F6B704 87.54%);
+  --gradient-color-orange-soft: linear-gradient(98deg, #EB9B15 1.78%, #F6B704 87.54%);
+  --text-color-dark: #100f0f;
+  --text-color-soft: #201f1f;
   
-  --titulos: "Nunito", sans-serif;
-  --textos: "Tauri", sans-serif;
+ 
+
+  --titulos: "Urbanist", sans-serif;
+  --textos: "Open Sans", sans-serif;
 }
 
 
@@ -38,8 +37,9 @@
 
 
 html, body {
-  height: 100vh;
-  width: 100vw;
   margin: 20px 0px;
   font-family: var(--textos);
+  background-color: var(--primary-color);
 }
+
+

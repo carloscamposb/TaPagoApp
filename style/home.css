@@ -1,11 +1,6 @@
-/* Parte principal do home */
-
-
-
-
+/* ====INICIO==== */
 
 /* Estilização do macro da capa */
-
 .contaner {
   display: flex;
   gap: 25px;
@@ -17,83 +12,120 @@
  
 }
 
-
-/* Estilização do perfilHome */
+/* ==== Estilização do perfilHome ==== */
 
 .imgPerfilDiv{
   text-align: center;
   font-size: 16px;
   color: var(--color-text);
   margin-top: 70px;
-}
-
-.imgPerfil{
-  width: 115px;
-}
-
-
-/* lembretes adicionados */
-
-.contaner .notificationAdded {
-  position: relative;
-  background-color: var(--color-card);
-  display: flex;
-  align-items: center;
-  padding: 20px; 
-  justify-content: space-between;
+  width: 300px;
+  padding: 20px;
   border-radius: 8px;
-  z-index: -1;
+  background-image: url(../assets/circle4.svg);
+  background-repeat: no-repeat;
+  background-position: 46% 20px;
+  background-size: 80px;
 }
 
-.notificationAdded .text {
-  text-align: center;
-  width: 60%;
-  font-size: 1rem;
-  color: var(--color-text);
-  font-weight: 500;
+/* Estilização da iamgem do perfil */
+.bi-person-circle{
+  font-size: 60px;
+  color:var(--text-color-soft)
 }
 
-.notificationAdded .lembreteNumber {
-  font-size: 40px;
-  color: var(--color-principal);
-  padding-right: 25px;
-  z-index: 1;
-}
-
-.contaner .lembreteAdd {
-  position: absolute;
-  right: 2px;
-  top: 50%;
-  transform: translateY(-60%);
-  font-size: 13px;
-}
-
-.textTitile{
+/* Botão de editar div externa */
+.btnLink{
   margin-top: 20px;
-  color: var(--color-text);
+}
+
+/* Botão de editar conteúdo */
+.btnEditar{
+  background-color: var(--detail-color);
+  padding: 5px 25px;
+  border-radius: 5px;
+
 }
 
 
+/*==== lembretes adicionados ==== */
 
 
 
+/* estilização da borda da sessão notificação */
+.borderNotification{
+  border: 3px solid var(--detail-color);
+  border-radius: 8px;
+  width: 100%;
+  
+}
 
-/* cards sessão acessar novas notificações, ContasPagas e Contas atrasadas */
+
+/* estilização da div interna de notificações adicionadas */
+.borderNotification .notificationAdded{
+ width: 90%;
+ margin: 10px auto; 
+ background-color: #EB9B15;
+ padding: 40px 20px ;
+ display: flex;
+ justify-content: space-between;
+ position: relative;
+ align-items: center;
+ border-radius: 8px;
+}
+
+/* estilização conteúdo de notificações adicionadas */
+
+.notificationAdded .lembreteAdd{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px 5px  0px 0px;
+  width: 60px;
+}
+
+/* estilização do texto de notificações adicionadas */
+.notificationAdded.textAdd{
+  width: 60%;
+  font-size: 1.15rem;
+  font-family: var(--titulos);
+  font-weight: 500;
+
+}
+
+
+/* estilização do número em notificações adicionadas */
+.lembreteNumber{
+  font-size: 45px;
+  font-weight: 600;
+  color: var(--white-color);
+  padding-right: 33px;
+  z-index: 1;
+
+}
+
+
+/* ==== Estilização para os topicos da sessão acessar novas notificações, contas pagas e contas atrasadas ==== */
 
 .cardsSessao{
   display: flex;
+  align-items: center;
   margin-top: 40px;
   margin-bottom: 40px;
   gap: 20px;
 }
 
+
+/* Estilização das imagens da sessão acessar novas notificações, contas pagas e contas atrasadas */
 .cardContaner img{
- width: 90px;
- padding: 0px 5px;
+ width: 80px;
+ padding: 0px 8px;
  display: block;
  margin: 0 auto;
+
 }
 
+/* Estilização dos textos da sessão acessar novas notificações, contas pagas e contas atrasadas  */
 .cardContaner p{
   text-align: center;
   font-size: .7rem;
@@ -101,8 +133,20 @@
 
 
 
-/* cards notificações ativas */
+/* ==== Cards notificações ativas (Carrosel) ==== */
 
+/* estilização do título da sessão */
+.textTitle{
+  font-family: var(--titulos);
+  font-weight: 400px; 
+  font-size: 1.15rem;
+  margin-bottom: 5px;
+}
+
+
+/* Carrosel */
+
+/* estilização geral externa do carrosel */
 .wrapper { 
   max-width: 1100px; 
   width: 100%; 
@@ -110,32 +154,31 @@
   position: relative; 
 } 
 
-
-.carousel{
-  height: 40px;
-}
-
+/* estilização do carrosel */
 .wrapper .carousel { 
   display: grid; 
   grid-auto-flow: column; 
   grid-auto-columns: calc((100% / 3) - 12px); 
   gap: 16px; 
   overflow-x: auto; 
-  /* scroll-snap-type: x mandatory;   */
   scroll-behavior: smooth; 
-  /* scrollbar-width: 0;  */
+  height: 40px;
 } 
 
+/* Retirar o scroll */
 .carousel::-webkit-scrollbar { 
   display: none; 
 } 
 
+
+/* permite o alinhamento vertical e horizontalmente no centro do contêiner do carrossel.Permite o alinhamento */
 .carousel :where(.card, .img) { 
   display: flex; 
   align-items: center; 
   justify-content: center; 
 } 
 
+/* remove o efeito de "scroll-snap", que normalmente faz com que o carrossel se desloque para a próxima imagem ou cartão assim que o usuário parar de arrastar */
 .carousel.dragging { 
   scroll-snap-type: none; 
   scroll-behavior: auto; 
@@ -145,15 +188,17 @@
   scroll-behavior: auto; 
 } 
 
+/* altera o cursor para mãozinha quando arrastado (Visão PC) */
 .carousel.dragging .card { 
   cursor: grab; 
   user-select: none; 
 } 
 
+/* Estilização de cada card do carrosel */
 .carousel .card { 
   height:240px; 
-  background: var(--color-principal);
-  border: 1px solid var(--color-barrasEbotoes);
+  background: var(--primary-color);
+  border: 3px solid var(--detail-color);
   border-radius: 8px; 
   display: flex; 
   cursor: pointer; 
@@ -170,6 +215,7 @@
 
 
 
+/* Estilização da div externa de titulos aparentes de cada card do carrosel */
 .tituloCard{
   position: relative;
   display: flex;
@@ -178,119 +224,138 @@
   padding-top: 50px;
 }
 
- .exitIcon{
-  width: 30%;
-  margin-top: 20px;
-  padding: 20px 0px 0px ;
-}
-
-
-.bi-arrow-down-circle{
-  position: absolute;
-  font-size: 1.5rem;
-  color: var(--color-barrasEbotoes);
-  right: 0;
-  bottom: 0;
-  padding: 10px;
-  border-bottom-left-radius: 8px;
-  background-color: var(--color-light-green);
-}
-
-
-.groupEndButtons{
-  position: relative;
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  padding: 5px 0px 5px 10px;
-  width: 90%;
-  margin: 0 auto;
-
-}
-
-
-
-.bi-x-circle{
-  position: absolute;
-  font-size: 1.5rem;
-  bottom: 0;
-  left: 0;
-  color: var(--color-barrasEbotoes);
-}
-
-.btnTapago{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  border: 1px solid var(--color-barrasEbotoes);
-  padding: 5px 15px;
-  border-radius: 5px;
-  background-image: url(../assets/fundoBotao.png);
-  background-size:cover;
-  background-position: 80% -45px;
-  background-repeat: no-repeat;
-  
-}
-
-
-
-
-
+/* Estilização do titulo aparentes de cada card*/
 .tituloCard p { 
   font-weight: 500; 
   font-size: .8rem;
   margin-top: 120px;
-  
+  font-family: var(--titulos);
 }
 
-
+/* Estilização dos tópicos de cada card no carrosel*/
 .card li { 
   font-weight: 500; 
   font-size: .8rem; 
   margin: 20px 0 5px; 
 } 
 
+/* Estilização dos textos em destaques de cada card no carrosel*/
 .card span { 
-  color:var( --color-light-green); 
+  color:var(--detail-variation-dark); 
   font-size: .8rem; 
-  
+  font-weight: 600;
+}
+
+
+/* Ação de abrir card ativa com JS */
+
+.card.active{
+  height: 60px;
+  padding-bottom: 0px;  
+} 
+ 
+/* tamanho da div esterna do card ativa com o JS */
+.carousel.active{
+  height: auto;
+}
+
+
+
+/* Estilização do icone de seta */
+.btnSeta{
+  position: absolute;
+  font-size: 1.5rem;
+  color: var(--text-color-dark);
+  right: 0;
+  bottom: 0;
+  padding: 8px 10px;
+  border-bottom-left-radius: 8px;
+  background-color: var(--detail-color);
+}
+
+
+/* Area de botoes na sessão final de cada card do carrosel */
+.groupEndButtons{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 5px 5px 10px;
+  width: 100%;
+}
+
+
+/* Estilização da div externa icone exit */
+.exitIcon{
+  width: 30%;
+  margin-top: 50px;
+  background-color: aqua;
+}
+
+
+/* Estilização do icone exit */
+.bi-x-circle{
+  position: absolute;
+  font-size: 1.5rem;
+  padding: 4px 8px;
+  font-weight: 600;
+  bottom: 0;
+  left: 0;
+  background-color: var(--detail-color);
+  border-radius: 50%;
 
 }
 
-.card.active{
-    height: 60px;
-    padding-bottom: 0px;  
-  } 
-   
+/* Estilização do botão 'Ta Pago' */
+.btnTapago{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--detail-color);
+  border: none;
+  font-weight: 600;
+  padding: 5px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-family: var(--titulos);
+}
 
-  .carousel.active{
-    height: auto;
-  }
+
+
+
+
+
+/* ==== Responsividade ==== */
+
+@media(max-width: 900px) { 
   
-
-
-
-
-/* responsividade */
-
-
-@media screen and (max-width: 900px) { 
+  /* Tamanho/quantidades dos cards no carrosel */
+  
   .wrapper .carousel { 
       grid-auto-columns: calc((100% / 3) - 9px); 
-
+      
+        
   } 
 } 
 
-@media screen and (max-width: 600px) { 
+@media(max-width: 600px) { 
+  
+  
+  /* Tamanho/quantidades dos cards no carrosel */
   .wrapper .carousel { 
       grid-auto-columns: 60%; 
 
   } 
 }
     
-@media screen and (max-width: 320px) { 
+@media(max-width: 320px) { 
+  
+  
+  /* Tamanho/quantidades dos cards no carrosel */
   .wrapper .carousel { 
       grid-auto-columns: 70%; 
 
   } 
 }
+
+/* ==== FIM ==== */

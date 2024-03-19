@@ -1,5 +1,18 @@
-/* Formatação inical do cadastro */
+/* ==== INICIO ==== */
 
+/*====  Estilização geral da sessão capa ===== */
+html,body{
+    margin: 0;
+    background-image: url(../assets/circle3.svg) , url(../assets/circle2.svg) ;
+    background-size: 90px , 80px;
+    background-repeat: no-repeat;
+    background-position: 0% 780px, 100% 300px; 
+  }
+
+
+
+
+/*====  Estilização do conteúdo ===== */
 .cadastro {
     display: flex;
     flex-direction: column;
@@ -9,44 +22,243 @@
   
 
 
-/* Botão de voltar */
+/*====  Estilização da área de retorno para a página inicial ===== */
 
-.back div{
+.back{
     width: 100%;
-    position: relative;
-    background-color: #615B5B;
 }
 
-.back .backLink {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 40px 20px 20px;
-
-    background-color:var(--color-card);
-    z-index: -1;
-    border-bottom-right-radius: 20px;
+/* Icone de voltar */
+.back .bi-arrow-left-circle{
+  display: block;
+  position: absolute;
+  font-size: 30px;
+  border-bottom-right-radius: 8px;
+  top: 0;
+  left: 0;
+  padding: 30px 20px 40px;
+  background-color: var(--detail-color);
 }
 
-.back .backLink .bi-arrow-left-circle{
-    font-size: 30px;
-    color: var(--color-text);
+
+
+/*logo da aplicação */
+
+.logoSecundaryPage{
+    font-size: 50px;
+    text-align: end;
+    padding-right: 10px;
+
 }
 
-/* Logo cadatstro*/
- .back .imgPagoCadastro{
-     position: absolute;
-     width: 140px;
- }
 
 
- .mainCadastro{
-    position: relative;
-    margin-top: 100px;
- 
- }
+/* ==== area principal cadastro ==== */
+
+.mainCadastro{
+    margin-top: 60px;
+}
+
+
+/* Imagem da área de cadastro */
 
 .imgCadastro{
-    padding-left: 15px;
-    margin-bottom: 30px;
+ width: 300px;
 }
+
+/* ==== Estilização do forms da pagina de cadastro ==== */
+
+/* Estilização do forms da pagina de cadastro */
+.wrapper {
+    margin-top: 50px;
+    font-size: 0.7rem;
+  }
+  
+  /* Estilização das medidas dos inputs */
+  .wrapper .input-box {
+    position: relative;
+    width: 88%;
+    height: 40px;
+    margin: 10px auto;
+  }
+
+  /* Estilização do conteúdo interno dos inputs */
+  .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    font-size: 0.9rem;
+    color: var(--text-color-dark);
+    padding: 20px 45px 18px 20px;
+    outline: none;
+    border: 1px solid var(--text-color-soft);
+    border-radius: 5px;
+  }
+  
+  /* estilização fincional via Desktop */
+  .input-box input:focus {
+    border: 2px solid var(--detail-color);
+  }
+  
+  /* Estilização do placeholder */
+  .input-box input::placeholder {
+    color: var(--text-color-soft);
+  }
+  
+
+  /* Estilização dos icones dos inputs */
+  .input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: var(--text-color-soft);
+  }
+  
+  
+  /* Estilização da área: Lembrar */
+  .wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3px 0px 0px;
+  }
+  
+  .rememberPassword{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 5px;
+  }
+  
+  
+  .remember-forgot label input {
+    accent-color: var(--text-color-dark);
+  
+  }
+  
+  .remember-forgot a {
+    color: var(--text-color-dark);
+    text-decoration: none;
+    padding-top: 2px;
+    text-decoration: underline;
+  
+  }
+  
+  /* Botão da área lembrar */
+  #check{
+    display: none;
+  
+  }
+  
+  .switch{
+    position: relative;
+    background-color:var(--text-color-soft);
+    width: 50px;
+    height: 25px;
+    display: flex;
+    transition: all .5s ease-in-out;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  
+  .slider{
+    position: absolute;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    bottom: 2px;
+    width: 20px;
+    height: 20px;
+    transition: all .5s ease-in-out;
+  }
+  
+  #check:checked ~ .switch{
+    background-color: var(--detail-color);
+  }
+  
+  #check:checked ~ .switch .slider{
+   transform: translateX(30px);
+  }
+  
+/* Estilização geral do botão de entrada  */
+ 
+  .wrapper .btnDiv {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 28px;
+  }
+  
+  
+/* Estilização do conteúdo do botão de entrada  */
+  .wrapper .btn {
+    margin-top: 20px;
+    width: 35%;
+    height: 30px;
+    background: var(--detail-color);
+    color: var(--text-color-dark);
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 6px;
+    text-decoration: none;
+  }
+  
+  
+ 
+/* Estilização de entrada via alternativa geral */
+  .alternativeAccessDiv {
+    margin: 10px auto;
+    width: 80%;
+  }
+  
+  /* Estilização do grupo de icones da entrada alternativa */
+  .alternativeAccessDiv .secundaryAccess {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .secundaryAccess li a img {
+    width: 80%;
+    
+  }
+  
+  /* aumenta um pouco o tamanho dos icones : Funcional em Desktop */
+  .secundaryAccess li:hover {
+    transform: scale(1.1);
+    background-position: -60px;
+  }
+  
+  /* texto dos icones no acesso alternativo*/
+  .alternativeAccessDiv p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    
+  }
+  
+  /* ==== Estilização da area de primeiro acesso que leva à página de cadastro ==== */
+  .firstAccessDiv{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    font-size: .9rem;
+    padding-top: 20px;
+    color: var(--text-color-dark);
+    text-decoration: underline;
+    color: #EB9B15;
+    font-family: var(--titulos);
+    font-weight: 600;
+  }
+  
+  /* ==== Responsividade ==== */
+  
+   /* ==== FIM ==== */
+  

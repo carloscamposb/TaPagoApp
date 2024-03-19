@@ -3,186 +3,358 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/iconAba.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logoAba.svg" type="image/x-icon">
     <link rel="stylesheet" href="./style/geral.css">
-    <link rel="stylesheet" href="./style/navegacaoHome.css">
     <link rel="stylesheet" href="./style/contasPagas.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./style/navegacao.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
-
-    <title>TaPago: Contas Pagas</title>
+    <title>Minhas contas pagas</title>
 </head>
-    <body>
-       <section class="contasPagas">
-        <header class="header">
-           
-            <nav class="nav">
-                <a class="logo" href="/home.html"><img src="./assets/logo.svg" alt="Imagem da Logo" ></a>  
-                <button class="hamburguer"></button>
-                <ul class="navList">
-                    <li><a href="/home.html"><i class="bi bi-house-door"></i> Home </a></li>
-                    <li><a href="#"><i class="bi bi-person"></i> Perfil</a></li>
-                    <li><a href="#"><i class="bi bi-clipboard-data"></i> Análises</a></li>
-                    <li ><a href="/addLembretesCard.html"><i class="bi bi-file-earmark-plus"></i>Adicionar Notificação</a> </li>
-                    <li class="actualPage"><a href="/contasPagas.html"><i class="bi bi-file-earmark-check"></i>Ver contas pagas</a> </li>
-                    <li><a href="/contasAtrasadas.html"><i class="bi bi-file-earmark-minus"></i> Ver Contas atrasadas </a> </li>
-                    <li><a href="#"><i class="bi bi-info-circle"></i>Ajuda</a> </li>
+
+<body>
+        <!-- Inicio da barra de navegação -->
+      
+    <section class="contasPagas">
+      
+        <header>
+               
+            <nav>
+                 <!-- Inicio do menu hamburguer -->
+                <a href="/home.html"><div class="logo"> TaPago </div></a>
+                <div class="menuBtn">
+                    <i class="bi bi-list" onclick="menuShow()"></i>
+                </div>
+                 <!-- final do menu hamburguer -->
+    
+                <ul>
+                    <li ><a href="/home.html" ><i class="bi bi-house"></i> Home </a></li>
+                    <li><a href="#"><i class="bi bi-file-person"></i> Perfil </a></li>
+                    <li><a href="/adicionar.html"><i class="bi bi-file-earmark-plus"></i> Adicionar</a></li>
+                    <li class="active"><a href="#" ><i class="bi bi-file-earmark-check"></i> Contas Pagas</a></li>
+                    <li><a href="#"><i class="bi bi-file-earmark-x"></i> Contas Atrasadas </a></li>
+                    <li><a href="#"><i class="bi bi-info-circle"></i> Ajuda </a></li>
                 </ul>
-            </nav>
-       </header>
-        
+              </nav>
+        </header>
 
-            <div class="contaner-Pag">
+    <section class="mainPagas">
+       <div class="sessaoCards">
+
+
+        <!-- Grupo 1 -->
+            <div class="cardGroup">
+                <div class="cardContaner">
+                    
+                    
+                    <div class="cardMes">
+                        <p> Nome:  <br> 
+                            <b>CELPE </b>  
+                        </p>
+                    </div> 
+                    
+                    <div class="ArrowDown">
+                    <i class="bi bi-arrow-down-circle btnSeta"  id= "arrow" ></i>
+                    </div>
+    
             
+                    <ul class="infosCard">
+                        <li>Valor:  <br>
+                            <b>R$ 130,80</b> 
+                        </li>
+                        <li>Validade: <br>
+                            <span><b>12/04/2024</b></span> 
+                        </li>
+                    </ul>   
 
-            <div class="tituloContasPagas">
-                <h3>Minhas contas pagas</h3>
-        
-            </div>
+                    <!-- ============== -->
 
 
-
-            <section class="pagasSection active section1">
-              
-                <div class="mes">
-                    <h3>Março/2024</h3>
-                    <i class="bi bi-arrow-down-circle" id="arrowPag"></i>
-                </div>
+                    <div class="cardMes">
+                        <p> Nome:  <br> 
+                            <b>CELPE </b>  
+                        </p>
+                    </div> 
                     
+                    <div class="ArrowDown">
+                    <i class="bi bi-arrow-down-circle btnSeta"  id= "arrow" ></i>
+                    </div>
+    
             
-                <div class="pag">
-                    <div class="cabecalhoCard">
-                        <h4><b>COMPESA</b></h4>
-                        <i class="fa-solid fa-x"></i>
-                    </div>
-                        
-                    <ul class="groupInfoPag">
-                        <li> 
-                            Valor: R$ 150,00 
+                    <ul class="infosCard">
+                        <li>Valor:  <br>
+                            <b>R$ 130,80</b> 
                         </li>
-                        <li> 
-                            Vencimento: 20/03/2024 
+                        <li>Validade: <br>
+                            <span><b>12/04/2024</b></span> 
                         </li>
-                        <li> 
-                            Pago: 
-                            <span>12/04/2024</span>  
-                        </li>
-                    </ul>
-                    
-                    <div class="groupEndButtons">
-                        <div class="exitIcon">
-                            <i class="bi bi-x-circle"></i>
-                        </div>
-                        <div>
-                            <button class="btnTapago"> Ta Pago </button>
-                        </div>
-                    </div>
+                    </ul>   
 
-                 
-                    <hr>
-                </div>
-          
-
-                <div class="pag">
-                    <div class="cabecalhoCard">
-                        <h4><b>CELPE</b></h4>
-                        <i class="fa-solid fa-x"></i>
-                    </div>
-                    
-                    <ul>
-                        <li> 
-                            Valor: R$ 135,30 
-                        </li>
-                        <li> 
-                            Vencimento: 28/04/2024 
-                        </li>
-                        <li> 
-                            Pago: <span> 20/04/2024</span>  
-                        </li>
-                    </ul>
-                    <div class="groupEndButtons">
-                        <div class="exitIcon">
-                            <i class="bi bi-x-circle"></i>
-                        </div>
-                        <div>
-                            <button class="btnTapago"> Ta Pago </button>
-                        </div>
-                    </div>
-                </div>
                 
-            </section>
+                </div>    
+
+
+                <!--Grupo 2 -->
+                    
+                
+                <div class="cardContaner">
+                    <div class="cardMes">
+                        <p> Nome:  <br> 
+                            <b>CELPE </b>  
+                        </p>
+                    </div> 
+                    
+                    <div class="ArrowDown">
+                    <i class="bi bi-arrow-down-circle btnSeta"  id= "arrow" ></i>
+                    </div>
+    
             
+                    <ul class="infosCard">
+                        <li>Valor:  <br>
+                            <b>R$ 130,80</b> 
+                        </li>
+                        <li>Validade: <br>
+                            <span><b>12/04/2024</b></span> 
+                        </li>
+                    </ul>   
 
-            <section class="pagasSection active section2" id="card">
-                <div class="mes">
-                    <h3>Fevereiro/2024</h3>
-                    <i class="bi bi-arrow-down-circle" id="arrowPag"></i>
-                </div>
+                    <!-- ============== -->
+
+                    <div class="cardMes">
+                        <p> Nome:  <br> 
+                            <b>CELPE </b>  
+                        </p>
+                    </div> 
                     
-                <div class="pag">
-                    <div class="cabecalhoCard">
-                        <h4><b>COMPESA</b></h4>
-                        <i class="fa-solid fa-x"></i>
+                    <div class="ArrowDown">
+                    <i class="bi bi-arrow-down-circle btnSeta"  id= "arrow" ></i>
                     </div>
+    
+            
+                    <ul class="infosCard">
+                        <li>Valor:  <br>
+                            <b>R$ 130,80</b> 
+                        </li>
+                        <li>Validade: <br>
+                            <span><b>12/04/2024</b></span> 
+                        </li>
+                    </ul>  
+                
+                </div>  
+            
+            </div>
+        
+              <!--grupo 3  -->
+
+            <div class="cardGroup">
+                <div class="cardContaner">
+                    <div class="cardMes">
+                        <p> Nome:  <br> 
+                            <b>CELPE </b>  
+                        </p>
+                    </div> 
                     
-                    <ul  class="groupInfoPag">
-                        <li> 
-                            Valor: R$ 50,00 
-                        </li>
-                        
-                        <li> 
-                            Vencimento: 20/03/2024 
-                        </li>
-                        
-                        <li> 
-                            Pago: 
-                            <span>16/03/2024</span> 
-                        </li>
-
-                    </ul>
-                    <div class="groupEndButtons">
-                        <div class="exitIcon">
-                            <i class="bi bi-x-circle"></i>
-                        </div>
-                        <div>
-                            <button class="btnTapago"> Ta Pago </button>
-                        </div>
+                    <div class="ArrowDown">
+                    <i class="bi bi-arrow-down-circle btnSeta"  id= "arrow" ></i>
                     </div>
-                 <hr>   
-                </div>
+    
+            
+                    <ul class="infosCard">
+                        <li>Valor:  <br>
+                            <b>R$ 130,80</b> 
+                        </li>
+                        <li>Validade: <br>
+                            <span><b>12/04/2024</b></span> 
+                        </li>
+                    </ul>   
+                
 
-                <div class="pag">
-                    <div class="cabecalhoCard">
-                        <h4><b>COMPESA</b></h4>
-                        <i class="fa-solid fa-x"></i>
-                    </div>
+                     <!-- ==================== -->
+
+                     <div class="cardMes">
+                        <p> Nome:  <br> 
+                            <b>CELPE </b>  
+                        </p>
+                    </div> 
                     
-                    <ul>
-                        <li>
-                            Valor: R$ 150,00 
-                        </li>
-                        <li> 
-                            Vencimento: 28/04/2024 
-                        </li>
-                        <li> 
-                            Pago: 
-                            <span> 20/04/2024</span>  
-                        </li>
-                    </ul>
-                    <div class="groupEndButtons">
-                        <div class="exitIcon">
-                            <i class="bi bi-x-circle"></i>
-                        </div>
-                        <div>
-                            <button class="btnTapago"> Ta Pago </button>
-                        </div>
+                    <div class="ArrowDown">
+                    <i class="bi bi-arrow-down-circle btnSeta"  id= "arrow" ></i>
                     </div>
-                </div>
+    
+            
+                    <ul class="infosCard">
+                        <li>Valor:  <br>
+                            <b>R$ 130,80</b> 
+                        </li>
+                        <li>Validade: <br>
+                            <span><b>12/04/2024</b></span> 
+                        </li>
+                    </ul>  
 
-            </section>  
-        </section> 
+                </div>    
 
-        <script src="./scripts/script.js"></script>
-    </body>
+                
+                <!-- 4 -->
+                    
+                
+                <div class="cardContaner">
+                    <div class="cardMes">
+                        <p> Nome:  <br> 
+                            <b>CELPE </b>  
+                        </p>
+                    </div> 
+                    
+                    <div class="ArrowDown">
+                    <i class="bi bi-arrow-down-circle btnSeta"  id= "arrow" ></i>
+                    </div>
+    
+            
+                    <ul class="infosCard">
+                        <li>Valor:  <br>
+                            <b>R$ 130,80</b> 
+                        </li>
+                        <li>Validade: <br>
+                            <span><b>12/04/2024</b></span> 
+                        </li>
+                    </ul>   
+
+                    <!-- ============= -->
+
+                    <div class="cardMes">
+                        <p> Nome:  <br> 
+                            <b>CELPE </b>  
+                        </p>
+                    </div> 
+                    
+                    <div class="ArrowDown">
+                    <i class="bi bi-arrow-down-circle btnSeta"  id= "arrow" ></i>
+                    </div>
+    
+            
+                    <ul class="infosCard">
+                        <li>Valor:  <br>
+                            <b>R$ 130,80</b> 
+                        </li>
+                        <li>Validade: <br>
+                            <span><b>12/04/2024</b></span> 
+                        </li>
+                    </ul>  
+                
+                </div>  
+            
+            </div>
+        
+        
+            <!-- grupo 5 -->
+
+            <div class="cardGroup">
+                <div class="cardContaner">
+                    <div class="cardMes">
+                        <p> Nome:  <br> 
+                            <b>CELPE </b>  
+                        </p>
+                    </div> 
+                    
+                    <div class="ArrowDown">
+                    <i class="bi bi-arrow-down-circle btnSeta"  id= "arrow" ></i>
+                    </div>
+    
+            
+                    <ul class="infosCard">
+                        <li>Valor:  <br>
+                            <b>R$ 130,80</b> 
+                        </li>
+                        <li>Validade: <br>
+                            <span><b>12/04/2024</b></span> 
+                        </li>
+                    </ul>   
+
+                    <!-- ================== -->
+
+
+                    <div class="cardMes">
+                        <p> Nome:  <br> 
+                            <b>CELPE </b>  
+                        </p>
+                    </div> 
+                    
+                    <div class="ArrowDown">
+                    <i class="bi bi-arrow-down-circle btnSeta"  id= "arrow" ></i>
+                    </div>
+    
+            
+                    <ul class="infosCard">
+                        <li>Valor:  <br>
+                            <b>R$ 130,80</b> 
+                        </li>
+                        <li>Validade: <br>
+                            <span><b>12/04/2024</b></span> 
+                        </li>
+                    </ul> 
+                
+                </div>    
+
+                
+                <!-- grupo 6 -->
+                    
+                
+                <div class="cardContaner">
+                    <div class="cardMes">
+                        <p> Nome:  <br> 
+                            <b>CELPE </b>  
+                        </p>
+                    </div> 
+                    
+                    <div class="ArrowDown">
+                    <i class="bi bi-arrow-down-circle btnSeta"  id= "arrow" ></i>
+                    </div>
+    
+            
+                    <ul class="infosCard">
+                        <li>Valor:  <br>
+                            <b>R$ 130,80</b> 
+                        </li>
+                        <li>Validade: <br>
+                            <span><b>12/04/2024</b></span> 
+                        </li>
+                    </ul>   
+
+                    <!-- =============================== -->
+
+                    <div class="cardMes">
+                        <p> Nome:  <br> 
+                            <b>CELPE </b>  
+                        </p>
+                    </div> 
+                    
+                    <div class="ArrowDown">
+                    <i class="bi bi-arrow-down-circle btnSeta"  id= "arrow" ></i>
+                    </div>
+    
+            
+                    <ul class="infosCard">
+                        <li>Valor:  <br>
+                            <b>R$ 130,80</b> 
+                        </li>
+                        <li>Validade: <br>
+                            <span><b>12/04/2024</b></span> 
+                        </li>
+                    </ul>   
+                
+                </div>  
+            
+            </div>
+    
+        
+        </div> 
+        
+    </section> 
+       
+
+    </section>  
+
+        <!-- Final da barra de navegação -->
+        <script src="./scripts/navBar.js"></script>
+</body>
+
 </html>

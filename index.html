@@ -3,44 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/iconAba.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logoAba.svg " type="image/x-icon">
     <link rel="stylesheet" href="./style/geral.css">
     <link rel="stylesheet" href="./style/capa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/bootstrap-icons.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <title>App Ta Pago: Bem-vind@!</title>
+    <title>App Pago: Bem-vind@!</title>
 
 </head>
 <body>
     
     <!-- Inicio da área inicial: Sessão de entrada -->
-    <section class="capa">
-
-        <img class="imgPago" src="./assets/logo.svg" alt="titulo da Aplicação">
+    <section class="capa"> 
+   
+        <h1 class="logoTitle">TaPago</h1>
         <h3 class="subtitulo">A sua vida financeira mais equilibrada</h3>
+   
         
         <div class="mainCapa">
             <div class="divImagemCapa">
-                <img class="imgCapa" src="./assets/ilustraCapa.svg" alt="Imagem da capa">
+                <img class="imgCapa" src="./assets/logoPrincipal.svg" alt="Imagem da capa">
             </div>
        
             <div class="wrapper">
 
                 <!--Formulário de acesso -->
 
-                <form action="">
+                <form action="" method="post">
                     <div class="fields">
                         
                         <div class="input-box">
                             <input type="email" name="name" placeholder=" E-mail"  required />
-                            <i class="fa-regular fa-user" ></i>
+                         
                         </div>
 
                         <div class="input-box">
                             <input type="password" name="password" id="senha" placeholder=" Senha"  required />
                             <i id="btnSenha" class="bi bi-eye" onclick="showing()"></i>
-                            <!-- <i id="btnSenha" class="fa-regular fa-eye" onclick="showing()"></i> -->
-                            <!-- <i class="fa-regular fa-eye-slash"></i> -->
                         </div>
 
                         <div class="remember-forgot">
@@ -77,13 +77,16 @@
                     </div>
                 
                 </form>
+                <!-- fim do formulário -->
             </div>
            
         </div>
 
     </section>
     
+      <!-- Link js -->
+    <script src="./scripts/scriptSenha.js"></script>
+    
 
-    <script src="./scripts/script.js"></script>
 </body>
 </html>

@@ -1,37 +1,57 @@
+/*====  Estilização geral da sessão capa ===== */
+
+html,body{
+  margin: 0;
+  background-image: url(../assets/circle.svg) , url(../assets/circle2.svg) ;
+  background-size: 50px , 80px;
+  background-repeat: no-repeat;
+  background-position: 0% 1px, 100% 600px; 
+}
 
 
 
-/* Estilização do macro da capa */
+/*====  Estilização do conteúdo ===== */
+
 .capa {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 99999;
+
 }
 
 
-
-
-
-.imgPago{
-  width: 250px;
-  margin: 0 auto;
- 
+/* Estilização da logo */
+.logoTitle{
+  color: var(--color-logo);
+  text-align: center;
+  font-family: var(--titulos);
+  font-size:3.75rem ;
+  padding-top: 20px;
 }
+
+
 
 
 
 /* Estilização do subtitulo */
 .subtitulo {
   margin-top: 10px;
-  color: var(--color-barrasEbotoes);
   font-family: var(--textos);
   font-size: 0.9rem;
-  color: #6A6A6A;
+  font-weight: 500;
+  color: var(--color-texto);
+  font-family: var(--titulos);
   animation-name: slide;
   animation-duration: 3s;
   transition: .5s;
 }
+
+
+/* animação do subtitulo */
 
 @keyframes slide{
   from{
@@ -47,13 +67,12 @@
 
 
 
-/* Estilização da iamgem da capa e formulario (conteúdos principais) */
+/* Estilização  do formulario (conteúdos principais) */
 .mainCapa {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
 }
-
 
 
 
@@ -66,39 +85,45 @@
 
 
 
-/* Estilização do formulario da capa */
+/* ==== Estilização do forms da pagina inicial ==== */
+
+/* Estilização do forms da pagina inicial */
 
 .wrapper {
-  margin-top: 10px;
+  margin-top: 50px;
   font-size: 0.7rem;
 }
 
+
+/* Estilização das medidas dos inputs */
 .wrapper .input-box {
   position: relative;
-  width: 80%;
+  width: 88%;
   height: 40px;
   margin: 10px auto;
 }
 
+/* Estilização do conteúdo interno dos inputs */
 .input-box input {
   width: 100%;
   height: 100%;
   background: transparent;
   font-size: 0.9rem;
-  color: var(--color-barrasEbotoes);
+  color: var(--text-color-dark);
   padding: 20px 45px 18px 20px;
   outline: none;
-  border: none;
-  background: #82d4c26b;
+  border: 1px solid var(--text-color-soft);
   border-radius: 5px;
 }
 
+/* Estilização de foco duncional para desktop */
 .input-box input:focus {
-  border: 2px solid var(--color-barrasEbotoes);
+  border: 2px solid var(--detail-color);
 }
 
+/* Estilização do placeholder */
 .input-box input::placeholder {
-  color: var(--color-barrasEbotoes);
+  color: var(--text-color-soft);
 }
 
 /* Estilização dos icones dos inputs */
@@ -108,7 +133,7 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 16px;
-  color: var(--color-detalhes);
+  color: var(--text-color-soft);
 }
 
 
@@ -129,27 +154,26 @@
 
 
 .remember-forgot label input {
-  accent-color: var(--color-texto);
+  accent-color: var(--text-color-dark);
 
 }
 
 .remember-forgot a {
-  color: var(--color-texto);
+  color: var(--text-color-dark);
   text-decoration: none;
   padding-top: 2px;
   text-decoration: underline;
 
 }
 
-
+/* Botão da área lembrar */
 #check{
   display: none;
-
 }
 
 .switch{
   position: relative;
-  background-color:var(--color-toggle);
+  background-color:var(--text-color-soft);
   width: 50px;
   height: 25px;
   display: flex;
@@ -160,7 +184,7 @@
 
 .slider{
   position: absolute;
-  background-color: var(--color-principal);
+  background-color: var(--primary-color);
   border-radius: 50%;
   bottom: 2px;
   width: 20px;
@@ -169,14 +193,14 @@
 }
 
 #check:checked ~ .switch{
-  background-color: var(--color-green-fieldDark);
+  background-color: var(--detail-color);
 }
 
 #check:checked ~ .switch .slider{
  transform: translateX(30px);
 }
 
-/*Estilização do botão de entrada  */
+/* Estilização geral do botão de entrada  */
 .wrapper .btnDiv {
   display: flex;
   align-items: flex-end;
@@ -184,12 +208,14 @@
   padding-right: 28px;
 }
 
+/* Estilização do conteúdo do botão de entrada  */
 .wrapper .btn {
   margin-top: 20px;
   width: 35%;
   height: 30px;
-  background: var(--color-barrasEbotoes);
-  color: var(--color-principal);
+  background: var(--detail-color);
+  color: var(--text-color-dark);
+  font-weight: 600;
   border: none;
   outline: none;
   border-radius: 8px;
@@ -201,18 +227,14 @@
   text-decoration: none;
 }
 
-.wrapper .btn:hover {
-  background-color: var(--color-detalhes);
-  color: #1e1e1e;
-  font-weight: 600;
-}
 
-/* Estilização de entrada via alternativa */
+/* Estilização de entrada via alternativa geral */
 .alternativeAccessDiv {
   margin: 10px auto;
   width: 80%;
 }
 
+/* Estilização do grupo de icones da entrada alternativa */
 .alternativeAccessDiv .secundaryAccess {
   display: flex;
   align-items: center;
@@ -225,37 +247,44 @@
   
 }
 
+/* aumenta um pouco o tamanho dos icones : Funcional em Desktop */
 .secundaryAccess li:hover {
   transform: scale(1.1);
   background-position: -60px;
 }
 
+/* texto dos icones no acesso alternativo*/
 .alternativeAccessDiv p {
   font-size: 0.9rem;
   margin-bottom: 10px;
   
 }
 
+/* ==== Estilização da area de primeiro acesso que leva à página de cadastro ==== */
 .firstAccessDiv{
   display:flex ;
   align-items: center;
   justify-content: center;
-  font-size: .9rem;
+  font-size: 1rem;
+  font-weight: 600;
   padding-top: 20px;
-  color: var(--color-barrasEbotoes);
+  margin-bottom: 20px;
+  color: var(--text-color-dark);
   text-decoration: underline;
+  color: var( --color-logo);
+  font-family: var(--titulos);
+  font-weight: 600;
 }
 
-/* 
-div class="firstAccessDiv">
-            <a class="firstAccess" href="#">Primeiro Acesso</a>
-*/
 
 
 
-/* Responsividade */
+/* ==== Responsividade ==== */
 
 @media (min-width: 700px) {
+
+  
+/* conteúdo capa*/
   .mainCapa {
     display: flex;
     flex-direction: row;
@@ -266,29 +295,30 @@ div class="firstAccessDiv">
     width: 96vw;
   }
 
+  /* Sessão da imagem da capa*/
   .divImagemCapa {
     display: flex;
     justify-content: center;
     width: 150%;
   }
 
+   /* imagem da capa*/
   .imgCapa {
     width: 100%;
   }
 
+  /* texto do subtitulo */
   .subtitulo {
     font-size: 1.5rem;
   }
 
+  /* Formulario:Geral */
   .wrapper {
     margin-top: 20px;
     font-size: 0.7rem;
     width: 100%;
   }
 
-  .imgLembretes {
-    width: 60%;
-  }
 
   .secundaryAccess li a img {
     width: 90%;
@@ -305,92 +335,174 @@ div class="firstAccessDiv">
 
 }
 
-@media (min-width: 900px) {
-  .mainCapa {
-    max-width: 700px;
-  }
-}
 
-@media (min-width: 1200px) {
-  .imgLembretes {
-    width: 600px;
-  }
-}
+@media (min-width: 1200px){
 
-@media (min-width: 1356px) {
-  .mainCapa {
-    gap: 90px;
+ /* capa geral */
+  .capa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-}
-
-@media (min-width: 1440px) {
-  .imgLembretes {
-    width: 750px;
+  
+  /* titulo da logo */
+  .logoTitle{
+    color: #EFA40F;
+    font-family: var(--titulos);
+    font-size:3.75rem ;
   }
+     
 
-  .imgLembretes {
-    width: 500px;
+  
+  /*  imagem da capa*/
+  .divImagemCapa {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
-}
-
-@media (min-width: 2560px) {
-  .mainCapa {
-    max-width: 1500px;
-  }
-
-  .imgLembretes {
-    width: 1000px;
-  }
-
-  .subtitulo {
-    font-size: 2.5rem;
-  }
-
-  .wrapper {
-    margin-top: 20px;
-    font-size: 1.5rem;
-  }
-
+  
+  
+  
+  /* formulario da capa */
+  
   .wrapper .input-box {
-    height: 80px;
-    margin-top: 30px;
+    position: relative;
+    width: 68%;
+    height: 40px;
+    margin: 10px auto;
   }
-
+  
   .input-box input {
-    font-size: 1.8rem;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    font-size: 0.9rem;
+    color: var(--text-color-dark);
+    padding: 20px 45px 18px 20px;
+    outline: none;
+    border: 1px solid var(--text-color-soft);
+    border-radius: 5px;
   }
-
+  
+  .input-box input:focus {
+    border: 2px solid var(--detail-color);
+  }
+  
+  .input-box input::placeholder {
+    color: var(--text-color-soft);
+  }
+  
+  /* icones dos inputs */
   .input-box i {
-    font-size: 1.7rem;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: var(--text-color-soft);
   }
-
-  .checkbox {
-    height: 25px;
-    width: 25px;
+  
+  
+  /* Area: Lembrar */
+  .wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3px 0px 0px;
+    font-size: .85rem;
   }
-
+  
+  .rememberPassword{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 5px;
+  }
+  
+  
+  .remember-forgot label input {
+    accent-color: var(--text-color-dark);
+  
+  }
+  
+  .remember-forgot a {
+    color: var(--text-color-dark);
+    text-decoration: none;
+    padding-top: 2px;
+    text-decoration: underline;
+  
+  }
+  
+  
+  /*Botão de entrada  */
+  .wrapper .btnDiv {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 80px;
+  }
+  
   .wrapper .btn {
-    margin-top: 60px;
-    height: 50px;
-    font-size: 1.6rem;
+    margin-top: 20px;
+    width: 30%;
+    padding: 30px;
+    background: var(--detail-color);
+    color: var(--text-color-dark);
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 6px;
+    text-decoration: none;
   }
-
-  /* Estilização de entrada via alternativa */
+  
+   
+  .wrapper .btn:hover {
+   background-color: var(--primary-color);
+   border: 3px solid var(--detail-color);
+   border-radius: 8px;
+    color: var(--detail-color);
+  }
+  
+  /* Entrada via alternativa */
   .alternativeAccessDiv {
-    margin-top: 80px;
+    margin: 60px auto;
+    width: 80%;
   }
-
+  
+  
   .secundaryAccess li a img {
-    width: 100px;
+    width: 100%;
+    
   }
-
-  .secundaryAccess li:hover {
-    transform: scale(1.1);
-    background-position: -60px;
-  }
+  
 
   .alternativeAccessDiv p {
-    font-size: 1.6rem;
-    padding-bottom: 10px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    
   }
+
+  /* primeiro acesso */
+  
+  .firstAccessDiv{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    padding-top: 100px;
+    color: var(--text-color-dark);
+    text-decoration: underline;
+    color: #EB9B15;
+    font-family: var(--titulos);
+    font-weight: 600;
+  }
+
 }
+
+/* ==== FIM ==== */

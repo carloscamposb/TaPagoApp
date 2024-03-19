@@ -1,0 +1,157 @@
+
+/* ==== INICIO ==== */
+
+/* ==== geral estilização da segunda página da sessão adição ==== */
+
+  html,body{
+    margin: 0;
+    background-image: url(../assets/circle.svg) , url(../assets/circle4.svg), url(../assets/circle4.svg) ;
+    background-size: 80px , 280px , 40px;
+    background-repeat: no-repeat;
+    background-position: 0% 56px, 250% 500px, 20% 180px ; 
+    position: relative;
+  }
+  
+
+ 
+  .contanerPage{
+    display: flex;
+    position: relative;
+    padding: 20px;
+    justify-content: end;
+    width: 100%;
+    padding-top: 120px;
+ 
+  
+  }
+
+
+/* ==== estilização da paginação ==== */
+
+
+/* Estilização da div externa */
+ .borderCirclePage{
+    border: 2px solid var(--detail-color);
+    border-radius: 50%;
+    padding: 5px;
+    
+  }
+
+/* Estilização da div interna */
+  .borderCirclePage .fillCirclePage{
+      background-color: var(--detail-color);
+      padding: 12px;
+      border-radius: 50%;
+  }
+
+  /* Estilização do conteúdo da paginação */
+  .fillCirclePage .numberPage{
+    font-family: var(--titulos);
+    font-size: 1.12rem;
+  }
+
+
+/* ==== Estilização do forms da primeira pagina de adicionar ==== */
+
+/* Estilização do forms da primeira pagina de adicionar geral */
+
+.wrapper {
+    margin-top: 30px;
+    font-size: 0.7rem;
+  }
+  
+  /* Estilização das medidas dos inputs */
+  .wrapper .input-box {
+    position: relative;
+    width: 85%;
+    height: 40px;
+    margin: 10px auto;
+  }
+  
+  /* Estilização do conteúdo interno dos inputs */
+  .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    font-size: 0.9rem;
+    color: var(--text-color-dark);
+    padding: 20px 45px 18px 20px;
+    outline: none;
+    border: 2px solid var(--detail-color);
+    background-color: #e6d4b5;
+    border-radius: 5px;
+  }
+
+  /* Estilização do primeiro input editável */
+  .wrapper .input-box-edit{
+    position: relative;
+    width: 67%;
+    height: 40px;
+    margin: 10px auto;
+  }
+
+  /* Estilização do placeholder */
+  .input-box input::placeholder {
+    color: var(--text-color-soft);
+  }
+
+/* Estilização dos grupos de inputs do forms */
+  .groupEdit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 70px;
+  }
+
+    /* Estilização da div do botão editar */
+    .divBtnEditar{
+      width: 15%;
+      text-align: end;
+      margin: 25px 0px 25px 0px;
+    }
+
+    /* Estilização do botão editar */
+  .btnAdd{
+    padding: 10px 20px;
+    background-color: var(--detail-color);
+    border-radius: 8px;
+    font-family: var(--titulos);
+    font-size: 1rem;
+  }
+ 
+
+  /* Estilização dos botoes inferiores*/
+
+  .btnDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+
+ .btn{
+   padding: 10px 20px;
+   border-radius: 8px;
+   font-family: var(--titulos);
+ }
+
+ .btn{
+    font-size: .9rem;
+ }
+
+  .btnBorder{
+    border: 2px solid var(--detail-color);
+  }
+
+
+
+  .btnFull{
+    background-color: var(--detail-color);
+  }
+
+
+  /* ==== Responsividade ==== */
+
+    /* ==== FIM ==== */
