@@ -83,7 +83,7 @@ nav ul li:hover{
 /* menu Hamburguer */
 nav .menuBtn i{
     color: var(--text-color-soft);
-    font-size: 30px;
+    font-size: 40px;
     padding: 0px 10px;
     border-radius: 8px;
     cursor: pointer;

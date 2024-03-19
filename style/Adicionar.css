@@ -8,7 +8,7 @@
     background-image: url(../assets/circle.svg) , url(../assets/circle4.svg), url(../assets/circle4.svg) ;
     background-size: 80px , 280px , 40px;
     background-repeat: no-repeat;
-    background-position: 0% 56px, 250% 500px, 20% 180px ; 
+    background-position: 0% 56px, 359% 650px, 20% 180px ; 
     position: relative;
   }
   
@@ -56,7 +56,7 @@
 /* Estilização do forms da primeira pagina de adicionar geral */
 
 .wrapper {
-    margin-top: 30px;
+    margin-top: 90px;
     font-size: 0.7rem;
   }
   
@@ -77,8 +77,8 @@
     color: var(--text-color-dark);
     padding: 20px 45px 18px 20px;
     outline: none;
-    border: 2px solid var(--detail-color);
-    background-color: #e6d4b5;
+    border: 2px solid var(--blocked-field-board);
+    background-color: var( --blocked-field);
     border-radius: 5px;
   }
 
