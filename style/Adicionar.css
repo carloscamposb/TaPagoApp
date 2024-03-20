@@ -5,10 +5,10 @@
 
   html,body{
     margin: 0;
-    background-image: url(../assets/circle.svg) , url(../assets/circle4.svg), url(../assets/circle4.svg) ;
-    background-size: 80px , 280px , 40px;
+    background-image: url(../assets/circle4.svg) , url(../assets/circle4.svg); 
+    background-size: 250px , 280px ;
     background-repeat: no-repeat;
-    background-position: 0% 56px, 359% 650px, 20% 180px ; 
+    background-position: -255% 256px, 359% 650px;
     position: relative;
   }
   

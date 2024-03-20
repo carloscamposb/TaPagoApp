@@ -2,10 +2,10 @@
 
 html,body{
   margin: 0;
-  background-image: url(../assets/circle.svg) , url(../assets/circle2.svg) ;
-  background-size: 50px , 80px;
+  background-image: url(../assets/circle5.svg) , url(../assets/circle2.svg), url(../assets/circle3.svg) ;
+  background-size: 490px , 80px, 100px;
   background-repeat: no-repeat;
-  background-position: 0% 1px, 100% 600px; 
+  background-position: 50% 0px, 100% 600px, -30% 500px; 
 }
 
 
@@ -30,7 +30,7 @@ html,body{
   text-align: center;
   font-family: var(--titulos);
   font-size:3.75rem ;
-  padding-top: 20px;
+  padding-top: 100px;
 }
 
 
@@ -41,7 +41,7 @@ html,body{
 .subtitulo {
   margin-top: 10px;
   font-family: var(--textos);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--color-texto);
   font-family: var(--titulos);
@@ -56,12 +56,12 @@ html,body{
 @keyframes slide{
   from{
     margin-right: 10%;
-    width: 200%;
+    width: 180%;
   }
 
   to{
     margin-right: -10%;
-    width: 83%;
+    width: 90%;
   }
 }
 
@@ -71,7 +71,7 @@ html,body{
 .mainCapa {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 
@@ -98,9 +98,9 @@ html,body{
 /* Estilização das medidas dos inputs */
 .wrapper .input-box {
   position: relative;
-  width: 88%;
+  width: 90%;
   height: 40px;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 /* Estilização do conteúdo interno dos inputs */
@@ -109,6 +109,7 @@ html,body{
   height: 100%;
   background: transparent;
   font-size: 0.9rem;
+  font-family: var(--titulos);
   color: var(--text-color-dark);
   padding: 20px 45px 18px 20px;
   outline: none;
@@ -163,6 +164,7 @@ html,body{
   text-decoration: none;
   padding-top: 2px;
   text-decoration: underline;
+  font-size: .7rem;
 
 }
 
@@ -174,7 +176,7 @@ html,body{
 .switch{
   position: relative;
   background-color:var(--text-color-soft);
-  width: 50px;
+  width: 45px;
   height: 25px;
   display: flex;
   transition: all .5s ease-in-out;
@@ -211,8 +213,8 @@ html,body{
 /* Estilização do conteúdo do botão de entrada  */
 .wrapper .btn {
   margin-top: 20px;
-  width: 35%;
-  height: 30px;
+  width: 55%;
+  height: 35px;
   background: var(--detail-color);
   color: var(--text-color-dark);
   font-weight: 600;
@@ -221,7 +223,7 @@ html,body{
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-align: center;
   padding-top: 6px;
   text-decoration: none;
@@ -230,7 +232,7 @@ html,body{
 
 /* Estilização de entrada via alternativa geral */
 .alternativeAccessDiv {
-  margin: 10px auto;
+  margin: 40px auto;
   width: 80%;
 }
 
@@ -267,7 +269,7 @@ html,body{
   justify-content: center;
   font-size: 1rem;
   font-weight: 600;
-  padding-top: 20px;
+  padding-top: 50px;
   margin-bottom: 20px;
   color: var(--text-color-dark);
   text-decoration: underline;
