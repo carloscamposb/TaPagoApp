@@ -36,7 +36,7 @@
 
 /* Botão de editar div externa */
 .btnLink{
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 /* Botão de editar conteúdo */
@@ -56,7 +56,7 @@
 .borderNotification{
   border: 3px solid var(--detail-color);
   border-radius: 8px;
-  width: 100%;
+  width: 300px;
   
 }
 
@@ -85,11 +85,10 @@
 }
 
 /* estilização do texto de notificações adicionadas */
-.notificationAdded.textAdd{
-  width: 60%;
-  font-size: 1.15rem;
+.notificationAdded .textAdd{
+  width: 60px;
+  font-size: 1.25rem;
   font-family: var(--titulos);
-  font-weight: 500;
 
 }
 
@@ -113,6 +112,7 @@
   margin-top: 40px;
   margin-bottom: 40px;
   gap: 20px;
+  width: 300px;
 }
 
 
@@ -128,7 +128,8 @@
 /* Estilização dos textos da sessão acessar novas notificações, contas pagas e contas atrasadas  */
 .cardContaner p{
   text-align: center;
-  font-size: .7rem;
+  font-size: .8rem;
+
 }
 
 
@@ -139,7 +140,7 @@
 .textTitle{
   font-family: var(--titulos);
   font-weight: 400px; 
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   margin-bottom: 5px;
 }
 
@@ -227,7 +228,7 @@
 /* Estilização do titulo aparentes de cada card*/
 .tituloCard p { 
   font-weight: 500; 
-  font-size: .8rem;
+  font-size: .9rem;
   margin-top: 120px;
   font-family: var(--titulos);
 }
@@ -237,6 +238,7 @@
   font-weight: 500; 
   font-size: .8rem; 
   margin: 20px 0 5px; 
+  font-size: .9rem;
 } 
 
 /* Estilização dos textos em destaques de cada card no carrosel*/
@@ -244,6 +246,7 @@
   color:var(--detail-variation-dark); 
   font-size: .8rem; 
   font-weight: 600;
+  font-size: .9rem;
 }
 
 
@@ -314,10 +317,12 @@
   background-color: var(--detail-color);
   border: none;
   font-weight: 600;
-  padding: 5px 15px;
+  padding: 8px 15px;
   margin-right: 10px;
   border-radius: 5px;
   font-family: var(--titulos);
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 

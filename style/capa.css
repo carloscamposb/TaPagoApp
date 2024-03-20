@@ -3,9 +3,9 @@
 html,body{
   margin: 0;
   background-image: url(../assets/circle5.svg) , url(../assets/circle2.svg), url(../assets/circle3.svg) ;
-  background-size: 490px , 80px, 100px;
+  background-size: 500px , 80px, 100px;
   background-repeat: no-repeat;
-  background-position: 50% 0px, 100% 600px, -30% 500px; 
+  background-position: 50% -80px, 100% 600px, -30% 500px; 
 }
 
 
@@ -30,7 +30,7 @@ html,body{
   text-align: center;
   font-family: var(--titulos);
   font-size:3.75rem ;
-  padding-top: 100px;
+  margin-top: 40px;
 }
 
 
@@ -101,6 +101,11 @@ html,body{
   width: 90%;
   height: 40px;
   margin: 20px auto;
+}
+
+/* tira o background cinza padrão do campo preenchido automaticamente */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--primary-color) inset !important;
 }
 
 /* Estilização do conteúdo interno dos inputs */
@@ -275,7 +280,7 @@ html,body{
   text-decoration: underline;
   color: var( --color-logo);
   font-family: var(--titulos);
-  font-weight: 600;
+  font-weight: 800;
 }
 
 

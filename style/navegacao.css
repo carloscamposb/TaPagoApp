@@ -39,7 +39,7 @@ nav .logo{
     color: var(--color-logo);
     font-family: var(--titulos);
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 
@@ -125,7 +125,7 @@ nav{
 /* barra de navegação Logo */
 nav .logo{
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 
@@ -157,7 +157,7 @@ nav ul li{
 
 /* links (textos) dos tópicos da área de navegação*/ 
 nav ul li a{
-   font-size:1.3rem;
+   font-size:1rem;
 }
 
 

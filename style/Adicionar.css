@@ -5,10 +5,10 @@
 
   html,body{
     margin: 0;
-    background-image: url(../assets/circle4.svg) , url(../assets/circle4.svg); 
-    background-size: 250px , 280px ;
+    background-image: url(../assets/circle4.svg)  ;
+    background-size: 250px ;
     background-repeat: no-repeat;
-    background-position: -255% 256px, 359% 650px;
+    background-position: 255% 496px;
     position: relative;
   }
   
@@ -56,7 +56,7 @@
 /* Estilização do forms da primeira pagina de adicionar geral */
 
 .wrapper {
-    margin-top: 90px;
+    margin-top: 30px;
     font-size: 0.7rem;
   }
   

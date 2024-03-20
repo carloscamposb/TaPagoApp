@@ -1,6 +1,6 @@
 //password
 function showing(){
-    var inputPass=document.getElementById('senha');
+    var inputPass=document.getElementById('password');
     var btnShowPass = document.getElementById('btnSenha');
 
     if(inputPass.type === 'password'){
@@ -18,7 +18,7 @@ function showing(){
 
 // Olhos icone senha 
 function showingConfirm(){
-    var inputPassConfirm=document.getElementById('senha2');
+    var inputPassConfirm=document.getElementById('passwordConfirmation');
     var btnShowPassConfirm = document.getElementById('btnSenha2');
 
     if(inputPassConfirm.type === 'password'){

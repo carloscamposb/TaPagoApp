@@ -38,48 +38,56 @@
 
                 <!--Formulário de acesso -->
 
-                <form action="" method="post">
-                    <div class="fields">
+                <form action="" method="post" id="form" class="form">
+                 
+                    <div class="input-box">
+                        <label for="username"> Nome <b>*</b><a href="#">Aqui vai a mensagem de erro</a></label>
+                        <input type="text" id="username" name="username" placeholder=" Digite seu nome " />
+                        <i class="fa-regular fa-user"></i>
+                      
                         
+                    </div>     
+                                
 
-                        <div class="input-box">
-                            <input type="text" name="name" placeholder=" nome"  required />
-                            <i class="fa-regular fa-user" ></i>
-                        </div>
+                    <div class="input-box">
+                        <label for="email"> E-mail <b>*</b><a href="#">Aqui vai a mensagem de erro</a></label>
+                        <input type="email" id="email" name="name" placeholder="Digite seu e-mail" autocomplete="email"  />
+                        <i class="fa-regular fa-user" ></i>
+                     
+                    </div>
 
-                        <div class="input-box">
-                            <input type="email" name="name" placeholder=" E-mail"  autocomplete="email" required />
-                            <i class="fa-regular fa-user" ></i>
-                        </div>
+                    <div class="input-box">
+                        <label for="password"> Senha <b>*</b><a href="#">Aqui vai a mensagem de erro</a></label>
+                        <input type="password" id="password" name="password" placeholder=" Digite uma senha "  />
+                        <i id="btnSenha" class="bi bi-eye" onclick="showing()"></i>
+                        
+                    </div>
 
-                        <div class="input-box">
-                            <input type="password" name="password" id="senha" placeholder=" Senha"  required />
-                            <i id="btnSenha" class="bi bi-eye" onclick="showing()"></i>
-                        </div>
-
-                        <div class="input-box">
-                            <input type="password" name="password" id="senha2" placeholder=" Confirmar senha"  required />
-                            <i id="btnSenha2" class="bi bi-eye" onclick="showingConfirm()"></i>
+                    <div class="input-box">
+                        <label for="passwordConfirmation"> Confirmar Senha<b>*</b><a href="#">Aqui vai a mensagem de erro</a></label>
+                        <input type="password" name="password" id="passwordConfirmation" placeholder=" Digite novamente a senha "   />
+                        <i id="btnSenha2" class="bi bi-eye" onclick="showingConfirm()"></i>
+                       
                 
-                        </div>
+                    </div>
 
                     
-                        <div class="btnDiv">
-                            <a href="index.html" class="btn"> Cadastrar </a>
-                        </div>
+                    <div class="btnDiv">
+                        <button class="btn"> Cadastrar </button>
+                    </div>
                       
                         <!-- Acesso alternativo -->
-                        <div class="alternativeAccessDiv" >
-                            <p> Acesse via: </p>
-                            <ul class="secundaryAccess">
-                                <li><a href="#"><img src="./assets/socialMediaGoogle.svg" alt="acesso registro google"></a> </li>
-                                <li><a href="#"><img src="./assets/socialMediaFacebbok.svg "" alt= "acesso registro facebook"></a> </li>
-                                <li><a href="#"><img src="./assets/socialMediaApple.svg" alt="acesso registro apple"></a> </li>
-                           </ul> 
+                    <div class="alternativeAccessDiv" >
+                        <p> Acesse via: </p>
+                        <ul class="secundaryAccess">
+                            <li><a href="#"><img src="./assets/socialMediaGoogle.svg" alt="acesso registro google"></a> </li>
+                            <li><a href="#"><img src="./assets/socialMediaFacebbok.svg "" alt= "acesso registro facebook"></a> </li>
+                            <li><a href="#"><img src="./assets/socialMediaApple.svg" alt="acesso registro apple"></a> </li>
+                        </ul> 
                              
-                        </div>
-                       
                     </div>
+                       
+                 
                 
                 </form>
             </div>
@@ -89,9 +97,10 @@
     </section>
     
 <!-- Link de JS -->
-    <script src="./scripts/scriptSenha.js"></script>
-</body>
-</html>
+    <script src="./scripts/validacaoCadastro.js"></script>
+   <script src="./scripts/scriptSenha.js"></script>
+    
 
 </body>
 </html>
+
