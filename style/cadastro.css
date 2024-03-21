@@ -6,7 +6,7 @@ html,body{
     background-image: url(../assets/circle6.svg),url(../assets/circle4.svg) , url(../assets/circle4.svg) ;
     background-size: 220px,90px , 220px;
     background-repeat: no-repeat;
-    background-position: 120% -40px  ,-25% 240px, 265% 500px; 
+    background-position: 100% -40px  ,-25% 240px, 265% 500px; 
   }
 
 

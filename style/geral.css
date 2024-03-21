@@ -8,8 +8,9 @@
   --primary-color: #EDE9DD;
   --white-color: #ffff;
   --detail-color: #EFA40F;
+  --preenchimento-color: #e9e8e7;
   --color-logo: #000000;
-  --detail-variation-dark:#d44a13;
+  --detail-variation-dark:#ce7c01;
   --gradient-color-orange: linear-gradient(98deg, #EB9B15 1.78%, #F6B704 87.54%);
   --gradient-color-orange-soft: linear-gradient(98deg, #EB9B15 1.78%, #F6B704 87.54%);
   --text-color-dark: #100f0f;

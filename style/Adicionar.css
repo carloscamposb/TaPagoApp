@@ -6,9 +6,9 @@
   html,body{
     margin: 0;
     background-image: url(../assets/circle4.svg)  ;
-    background-size: 250px ;
+    background-size: 170px ;
     background-repeat: no-repeat;
-    background-position: 255% 496px;
+    background-position: 175% 500px;
     position: relative;
   }
   
@@ -34,6 +34,7 @@
     border: 2px solid var(--detail-color);
     border-radius: 50%;
     padding: 5px;
+    margin-right: 5 px;
     
   }
 
@@ -51,6 +52,38 @@
   }
 
 
+
+
+/* Estlizando o campo da imagem e edição da imagem */
+.imagemConta{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.imagemConta img{
+  width: 280px;
+
+}
+
+.imagemConta #camera{
+  position: absolute;
+  left: 75%;
+  bottom: -10%;
+  padding: 2px;
+  font-size: 30px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: var(--detail-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+} 
+
 /* ==== Estilização do forms da primeira pagina de adicionar ==== */
 
 /* Estilização do forms da primeira pagina de adicionar geral */
@@ -63,9 +96,9 @@
   /* Estilização das medidas dos inputs */
   .wrapper .input-box {
     position: relative;
-    width: 85%;
+    width: 75%;
     height: 40px;
-    margin: 10px auto;
+    margin: 30px auto;
   }
   
   /* Estilização do conteúdo interno dos inputs */
@@ -77,24 +110,27 @@
     color: var(--text-color-dark);
     padding: 20px 45px 18px 20px;
     outline: none;
-    border: 2px solid var(--blocked-field-board);
-    background-color: var( --blocked-field);
+    border: 1px solid var(--text-color-soft);
+    background-color: transparent;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
-  /* Estilização do primeiro input editável */
-  .wrapper .input-box-edit{
-    position: relative;
-    width: 67%;
-    height: 40px;
-    margin: 10px auto;
-  }
+
 
   /* Estilização do placeholder */
   .input-box input::placeholder {
     color: var(--text-color-soft);
   }
 
+
+    /* Foco enquanto esta no input */
+    .input-box input:focus {
+      border: 2px solid var(--detail-color);
+    }
+  
+    
+    
 /* Estilização dos grupos de inputs do forms */
   .groupEdit{
     display: flex;
@@ -103,23 +139,69 @@
     padding-right: 70px;
   }
 
-    /* Estilização da div do botão editar */
-    .divBtnEditar{
-      width: 15%;
-      text-align: end;
-      margin: 25px 0px 25px 0px;
-    }
 
-    /* Estilização do botão editar */
-  .btnAdd{
-    padding: 10px 20px;
-    background-color: var(--detail-color);
-    border-radius: 8px;
-    font-family: var(--titulos);
-    font-size: 1rem;
+  /* Sessão das prioridades */
+
+  .prioritySection{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;    
+    margin-top: 50px;
+  }
+
+  
+  .groupPriority{
+    position: relative;
+    padding: 10px 25px;
+    width: 30%;
+    background-color: var(--primary-color);
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid var(--text-color-soft);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
- 
+
+  .groupPriority.active{
+    border: 2px solid var(--detail-color);
+    background-color: var(--preenchimento-color);
+}
+
+
+  .groupPriority p{
+    font-family: var(--titulos);
+    font-size: .8rem;
+    
+  }
+
+  
+
+.priorityMark{
+  width: 20px;
+  height: 28px;
+  position: absolute;
+  top:0;
+  right: 0;
+  margin-right: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+}
+  
+.priorityMark.red{
+  background-color: #E57435;
+}
+
+.priorityMark.yellow{
+  background-color: #E4A400;
+}
+
+.priorityMark.green{
+  background-color: #D2BE57;
+}
+
+
+
 
   /* Estilização dos botoes inferiores*/
 
@@ -129,6 +211,7 @@
     justify-content: center;
     gap: 30px;
     margin-top: 40px;
+    margin-bottom: 20px;
   }
 
 
@@ -153,6 +236,9 @@
     background-color: var(--detail-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+
+
+
 
 
   /* ==== Responsividade ==== */

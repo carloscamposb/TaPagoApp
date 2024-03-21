@@ -75,7 +75,7 @@
     color: var(--text-color-dark);
     padding: 20px 45px 18px 20px;
     outline: none;
-    border: 2px solid var(--detail-color);
+    border: 1px solid var(--text-color-soft);
     border-radius: 5px;
   }
 
@@ -87,6 +87,12 @@
     background-color: var(--detail-color);
     font-size: 10px;
   }
+
+  /* Foco enquanto esta no input */
+  .input-box input:focus {
+    border: 2px solid var(--detail-color);
+  }
+  
 
 /* Estilização do label */
   .input-box label{
@@ -160,17 +166,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
    .input-box select {
     background-color:var(--primary-color);
-    border: 2px solid var(--detail-color);
+    border: 1px solid var(--text-color-soft);
     outline: none;
     width: 130px;
     height: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
   }
 
 
-.input-box-plataforma select option:hover {
-    background-color: orange; /* Cor de fundo das opções quando o mouse está sobre elas */
-}
+  .input-box select:focus {
+    border: 2px solid var(--detail-color);
+  }
+  
+
 
 
    /* ====Estilização de botões da parte inferior ==== */
@@ -182,6 +191,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     gap: 30px;
     margin-top: 40px;
     margin-bottom: 50px;
+    
   }
 
 
@@ -191,6 +201,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
    font-family: var(--titulos);
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
    font-size: .9rem;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
  }
 
 

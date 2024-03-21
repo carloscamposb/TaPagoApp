@@ -57,47 +57,72 @@
 
             <form action="" method="post">
                 <div class="fields">
-                    
-                 <div class="groupEdit">
-                    <div class="input-box input-box-edit">
-                        <input type="text" name="name" placeholder="[nome]" readonly  />
-                    
-                    </div>
-
-                    <div class="divBtnEditar">
-                        <a href="#" class="btnAdd"> Editar </a>
-                    </div>
                  
-                 </div>
+                <div class="imagemConta">
+                    <img src="./assets/contaImagem.svg" alt="Imagem Modelo da Conta"> 
                   
-                   
-                      
-
-                    <div class="input-box">
-                        <input type="text" name="valor" id="valor" value="[R$ 00,00]" readonly />
+                    <div class="cameraDiv">
+                      <i class="bi bi-camera" id="camera"></i>
                     </div>
-
-                    <div class="input-box">
-                        <input type="datetime" name="data" id="data" value="[dd/mm/yyyy]"  required />
-                    
-                    </div>
-
-
                 
-                    <div class="btnDiv">
-                        <a href="#" class="btn btnBorder"> Refazer </a>
-                        <a href="/configAdicao.html" class="btn btnFull"> Próximo </a>
+
+                </div>    
+               
+
+                    <div class="input-box">
+                        <label for="nome"> Nome do documento</label>
+                        <input type="text" name="nome" id="nome" placeholder="Insira um nome"  />
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="nome"> Valor do documento</label>
+                        <input type="text" name="valor" id="valor" placeholder="Isira o valor"  />
+                    </div>
+
+                    <div class="input-box">
+                        <label for="nome"> Vencimento do documento</label>
+                        <input type="datetime" name="data" id="data" placeholder="Insira a data de vencimento"  />
+                    
                     </div>
             
                    
                 </div>
             
             </form>
+
+
+            <section class="prioritySection">
+
+                <div class="groupPriority">
+                    <p>Alta</p>
+                    <div class="priorityMark red"></div>  
+                </div>
+
+                <div class="groupPriority">
+                    <p>Média</p>
+                    <div class="priorityMark yellow"></div>  
+                </div>  
+                
+                <div class="groupPriority">
+                    <p>Baixa</p>
+                    <div class="priorityMark green"></div>  
+                </div>  
+
+
+            </section>
+
+
+            <div class="btnDiv">
+                <a href="#" class="btn btnBorder"> Refazer </a>
+                <a href="/configAdicao.html" class="btn btnFull"> Próximo </a>
+            </div>
         </div>
 
     
     </section>    
         
     <script src="./scripts/navBar.js"></script>
+    <script src="./scripts/marcarCards.js"></script>
 </body>
 </html>

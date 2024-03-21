@@ -16,6 +16,10 @@
 
 .imgPerfilDiv{
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   font-size: 16px;
   color: var(--color-text);
   margin-top: 70px;
@@ -24,28 +28,35 @@
   border-radius: 8px;
   background-image: url(../assets/circle4.svg);
   background-repeat: no-repeat;
-  background-position: 46% 20px;
-  background-size: 80px;
+  background-position: 40% 10px;
+  background-size: 140px;
 }
 
 /* Estilização da iamgem do perfil */
-.bi-person-circle{
-  font-size: 60px;
-  color:var(--text-color-soft)
+.imgPerfil{
+  width: 130px;
 }
+
+
+
 
 /* Botão de editar div externa */
 .btnLink{
   margin-top: 15px;
 }
 
-/* Botão de editar conteúdo */
-.btnEditar{
-  background-color: var(--detail-color);
-  padding: 5px 25px;
-  border-radius: 5px;
+ /* Botão de editar conteúdo */
+.btnEditar i{
+  position: absolute;
+  padding: 5px 10px;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  top: 110px;
+  right: 60px;
+  background-color: var(--detail-color); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
-}
+} 
 
 
 /*==== lembretes adicionados ==== */
@@ -72,6 +83,7 @@
  position: relative;
  align-items: center;
  border-radius: 8px;
+ 
 }
 
 /* estilização conteúdo de notificações adicionadas */
@@ -223,6 +235,7 @@
   width: 100%;
   align-items: center;
   padding-top: 50px;
+  
 }
 
 /* Estilização do titulo aparentes de cada card*/
@@ -233,12 +246,19 @@
   font-family: var(--titulos);
 }
 
+.card .infosCard{
+  width: 98%;
+  position: relative;
+  
+}
+
 /* Estilização dos tópicos de cada card no carrosel*/
 .card li { 
   font-weight: 500; 
   font-size: .8rem; 
   margin: 20px 0 5px; 
   font-size: .9rem;
+  
 } 
 
 /* Estilização dos textos em destaques de cada card no carrosel*/
@@ -262,6 +282,36 @@
   height: auto;
 }
 
+.ArrowDown{
+ display: flex;
+ width: 100%;
+ background-color: #EB9B15;
+}
+
+
+.markColor{
+  width: 30px;
+  height: 60px;
+  position: absolute;
+  bottom: 4px;
+  right: 60px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 2;
+}
+
+.markColor.red{
+  background-color: #E57435 ;
+}
+
+.markColor.yellow{
+  background-color: #E4A400 ;
+}
+
+.markColor.green{
+  background-color: #D2BE57 ;
+}
+
 
 
 /* Estilização do icone de seta */
@@ -274,8 +324,37 @@
   padding: 8px 10px;
   border-bottom-left-radius: 8px;
   background-color: var(--detail-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+
+
+
+
+
+
+
+.groupArquivo{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.btnArquivo{
+  position: absolute;
+  bottom: -5;
+  right: 0;
+  background-color: var(--detail-color);
+  border: none;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-family: var(--titulos);
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
+}
 
 /* Area de botoes na sessão final de cada card do carrosel */
 .groupEndButtons{
@@ -292,7 +371,7 @@
 .exitIcon{
   width: 30%;
   margin-top: 50px;
-  background-color: aqua;
+ 
 }
 
 
@@ -306,6 +385,7 @@
   left: 0;
   background-color: var(--detail-color);
   border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -316,14 +396,16 @@
   right: 0;
   background-color: var(--detail-color);
   border: none;
-  font-weight: 600;
-  padding: 8px 15px;
-  margin-right: 10px;
+  padding: 8px 16px;
+  margin-right: 5px;
   border-radius: 5px;
   font-family: var(--titulos);
+  text-align: center;
   font-weight: 600;
+  font-size: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 
 
 
