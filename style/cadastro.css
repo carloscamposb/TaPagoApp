@@ -4,9 +4,9 @@
 html,body{
     margin: 0;
     background-image: url(../assets/circle6.svg),url(../assets/circle4.svg) , url(../assets/circle4.svg) ;
-    background-size: 240px,90px , 220px;
+    background-size: 220px,90px , 220px;
     background-repeat: no-repeat;
-    background-position: 120% 0px  ,-25% 240px, 265% 500px; 
+    background-position: 120% -40px  ,-25% 240px, 265% 500px; 
   }
 
 
@@ -48,7 +48,7 @@ html,body{
 .logoSecundaryPage{
     font-size: 50px;
     text-align: end;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     padding-right: 10px;
 
      
@@ -56,12 +56,12 @@ html,body{
 }
 
 
-
+/* 
 /* ==== area principal cadastro ==== */
 
-.mainCadastro{
-    margin-top: 60px;
-}
+/* .mainCadastro{
+    margin-top: 0px;
+} */ 
 
 
 /* Imagem da área de cadastro */
@@ -74,7 +74,6 @@ html,body{
 
 /* Estilização do forms da pagina de cadastro */
 .wrapper {
-    margin-top: 40px;
     font-size: 0.7rem;
   }
   
@@ -128,8 +127,9 @@ input:-webkit-autofill {
   /* Estilização dos icones dos inputs */
   .input-box i {
     position: absolute;
-    right: 20px;
-    top: 100%;
+    right: 0;
+    padding-right: 20px;
+    top:40px;
     transform: translateY(-50%);
     font-size: 16px;
     color: var(--text-color-soft);
@@ -188,7 +188,7 @@ input:-webkit-autofill {
 
 /* Estilização de entrada via alternativa geral */
   .alternativeAccessDiv {
-    margin: 40px auto;
+    margin: 20px auto;
     width: 80%;
   }
   

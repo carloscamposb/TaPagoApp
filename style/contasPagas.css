@@ -1,10 +1,10 @@
 
 html,body{
     margin: 0;
-    background-image: url(../assets/circle.svg) , url(../assets/circle4.svg), url(../assets/circle4.svg) ;
-    background-size: 80px , 280px , 40px;
+    background-image:  url(../assets/circle4.svg), url(../assets/circle4.svg) ;
+    background-size:  280px , 40px;
     background-repeat: no-repeat;
-    background-position: 0% 56px, 250% 520px, 30% 520px ; 
+    background-position:  250% 520px, 30% 520px ; 
     position: relative;
   }
   
@@ -13,3 +13,11 @@ html,body{
     margin-top: 150px;
  }
   
+
+ .cardContaner{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+   position: relative;
+ }

@@ -73,7 +73,7 @@ function checkInputPasswordConfirmation(){
     const passwordConfirmationValue =passwordConfirmation.value;
 
     if(passwordConfirmationValue === ""){
-        errorInput(passwordConfirmation, "Requer confirmação de senha")
+        errorInput(passwordConfirmation, "Confirme a senha")
     }else if(passwordConfirmationValue !== passwordValue){
         errorInput(passwordConfirmation, "As senhas são diferentes")
     }else{

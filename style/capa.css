@@ -3,9 +3,9 @@
 html,body{
   margin: 0;
   background-image: url(../assets/circle5.svg) , url(../assets/circle2.svg), url(../assets/circle3.svg) ;
-  background-size: 500px , 80px, 100px;
+  background-size: 580px , 80px, 100px;
   background-repeat: no-repeat;
-  background-position: 50% -80px, 100% 600px, -30% 500px; 
+  background-position: 50% -130px, 100% 600px, -30% 500px; 
 }
 
 
@@ -48,6 +48,7 @@ html,body{
   animation-name: slide;
   animation-duration: 3s;
   transition: .5s;
+  text-align: center;
 }
 
 
@@ -90,7 +91,7 @@ html,body{
 /* Estilização do forms da pagina inicial */
 
 .wrapper {
-  margin-top: 50px;
+  margin-top: 20px;
   font-size: 0.7rem;
 }
 
@@ -98,7 +99,7 @@ html,body{
 /* Estilização das medidas dos inputs */
 .wrapper .input-box {
   position: relative;
-  width: 90%;
+  width: 100%;
   height: 40px;
   margin: 20px auto;
 }
@@ -274,7 +275,7 @@ input:-webkit-autofill {
   justify-content: center;
   font-size: 1rem;
   font-weight: 600;
-  padding-top: 50px;
+  padding-top:20px;
   margin-bottom: 20px;
   color: var(--text-color-dark);
   text-decoration: underline;
@@ -502,12 +503,12 @@ input:-webkit-autofill {
     align-items: center;
     justify-content: center;
     font-size: 1.15rem;
-    padding-top: 100px;
+    padding-top: 80px;
     color: var(--text-color-dark);
     text-decoration: underline;
-    color: #EB9B15;
     font-family: var(--titulos);
     font-weight: 600;
+    
   }
 
 }

@@ -189,11 +189,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
    padding: 10px 20px;
    border-radius: 8px;
    font-family: var(--titulos);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   font-size: .9rem;
  }
 
- .btn{
-    font-size: .9rem;
- }
 
   .btnBorder{
     border: 2px solid var(--detail-color);
