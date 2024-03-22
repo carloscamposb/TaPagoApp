@@ -153,10 +153,10 @@
   
   .groupPriority{
     position: relative;
-    padding: 10px 25px;
-    width: 30%;
+    padding: 10px;
+    width: 25%;
     background-color: var(--primary-color);
-    text-align: center;
+    text-align: start;
     border-radius: 5px;
     border: 1px solid var(--text-color-soft);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
