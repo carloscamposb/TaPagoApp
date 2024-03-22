@@ -15,7 +15,7 @@ O TaPago é um aplicativo em desenvolvimento que visa lembrar você dos seus pag
 
 ## Brevemente 
 
-* **Integração com API de Câmera:** Será implementado um API de câmera para facilitar a leitura de códigos de barras. Isso permitirá que você capture informações como nome do documento, valor e data de vencimento com facilidade.
+* **Integração com API de Câmera:** Será implementado um API de câmera para tirar fotos de suas contas que precisam ser pagas. Junto à informações como nome do documento, valor e data de vencimento.
 ---
 * **Backend Node.js:** O backend será construído em Node.js, garantindo um desempenho rápido e confiável. Ele gerenciará a lógica do aplicativo e se comunicará com o banco de dados.
 ---
