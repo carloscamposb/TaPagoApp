@@ -3,7 +3,7 @@
 /*====  Estilização geral da sessão capa ===== */
 html,body{
     margin: 0;
-    background-image: url(../assets/circle6.svg),url(../assets/circle4.svg) , url(../assets/circle4.svg) ;
+    background-image: url(../assets/img/circle6.svg),url(../assets/img/circle4.svg) , url(../assets/img/circle4.svg) ;
     background-size: 220px,90px , 220px;
     background-repeat: no-repeat;
     background-position: 100% -40px  ,-25% 240px, 265% 500px; 

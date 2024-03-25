@@ -1,7 +1,7 @@
 
 html,body{
     margin: 0;
-    background-image:  url(../assets/circle4.svg), url(../assets/circle4.svg) ;
+    background-image:  url(../assets/img/circle4.svg), url(../assets/img/circle4.svg) ;
     background-size:  280px , 40px;
     background-repeat: no-repeat;
     background-position:  250% 520px, 30% 520px ; 
