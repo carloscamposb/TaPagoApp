@@ -1,4 +1,4 @@
- ## Ta Pago: 📃💸
+ ## Ta Pago: 📃💸🟠
   O aplicativo que está sendo construído para ajudá-lo a manter sua saúde financeira equilibrada!
 
 
