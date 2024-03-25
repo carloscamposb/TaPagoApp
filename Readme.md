@@ -1,10 +1,10 @@
- ## TaPago: 📃💸
+ ## Ta Pago: 📃💸
   O aplicativo que está sendo construído para ajudá-lo a manter sua saúde financeira equilibrada!
 
 
 ## Sobre o Aplicativo
 
-O TaPago é um aplicativo em desenvolvimento que visa lembrar você dos seus pagamentos por meio de notificações. O objetivo é fornecer uma ferramenta que o ajude a gerenciar suas finanças de forma eficaz e a evitar atrasos em seus pagamentos.
+O Ta Pago é um aplicativo em desenvolvimento que visa lembrar você dos seus pagamentos por meio de notificações. O objetivo é fornecer uma ferramenta que o ajude a gerenciar suas finanças de forma eficaz e a evitar atrasos em seus pagamentos.
 
 
 ## Recursos em Destaque
