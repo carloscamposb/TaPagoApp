@@ -1,10 +1,25 @@
- ## TaPago: 📃💸
+ ## Ta Pago: 📃💸🟠
   O aplicativo que está sendo construído para ajudá-lo a manter sua saúde financeira equilibrada!
 
 
 ## Sobre o Aplicativo
 
-O TaPago é um aplicativo em desenvolvimento que visa lembrar você dos seus pagamentos por meio de notificações. O objetivo é fornecer uma ferramenta que o ajude a gerenciar suas finanças de forma eficaz e a evitar atrasos em seus pagamentos.
+O Ta Pago é um aplicativo em desenvolvimento que visa lembrar você dos seus pagamentos por meio de notificações. O objetivo é fornecer uma ferramenta que o ajude a gerenciar suas finanças de forma eficaz e a evitar atrasos em seus pagamentos.
+
+
+
+## Sessões do aplicativo Ta Pago:
+
+>* Área de Login
+> * Área de cadastro
+> * Menu de Navegação
+> * Área principal (home)
+> * Perfil
+> * Sessão de adição de notificação
+> * Sessão de contas pagas
+> * Sessão de contas atrasadas
+> * Gráfico de consumo 
+> * Dúvidas
 
 
 ## Recursos em Destaque
@@ -15,7 +30,7 @@ O TaPago é um aplicativo em desenvolvimento que visa lembrar você dos seus pag
 
 ## Brevemente 
 
-* **Integração com API de Câmera:** Será implementado um API de câmera para facilitar o usuário de lembrar de que conta se trata. Nessa sessão você pode editar a foto da conta, descrever informações como nome do documento, valor e data de vencimento com facilidade.
+* **Integração com API de Câmera:** Será implementado um API de câmera para facilitar o usuário de lembrar de que conta se trata. O usuário poderá editar, exibir e excluir arquivos de fotos das seus boletos de maneira prática.
 ---
 * **Backend Node.js:** O backend será construído em Node.js, garantindo um desempenho rápido e confiável. Ele gerenciará a lógica do aplicativo e se comunicará com o banco de dados.
 ---
