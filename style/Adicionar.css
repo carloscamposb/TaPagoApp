@@ -17,13 +17,20 @@
   .contanerPage{
     display: flex;
     position: relative;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     padding: 20px;
-    justify-content: end;
     width: 100%;
     padding-top: 120px;
- 
-  
   }
+
+  .bi-arrow-left-circle{
+    position: absolute;
+    left: 0;
+    padding: 10px 15px;
+    font-size: 30px;
+}
+
 
 
 /* ==== estilização da paginação ==== */

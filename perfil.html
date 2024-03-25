@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/logoAba.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style/geral.css">
+    <link rel="stylesheet" href="./style/perfil.css">
+    <link rel="stylesheet" href="./style/navegacao.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap">
+    
+    <title>TaPago: Perfil </title>
+
+</head>
+    <body>
+        <section class="home">
+        <!-- Inicio da barra de navegação -->
+              
+        <header>
+            <nav>
+                <a href="/home.html">
+
+                    <div class="logo"> TaPago </div>
+                </a>
+                <div class="menuBtn">
+                    <i class="bi bi-list" onclick="menuShow()"></i>
+                </div>
+
+                <ul>
+                    <li ><a href="/home.html" ><i class="bi bi-house"></i> Home </a></li>
+                    <li class="active"><a href="/perfil.html"><i class="bi bi-file-person"></i> Perfil </a></li>
+                    <li><a href="/adicionar.html"><i class="bi bi-file-earmark-plus"></i> Adicionar</a></li>
+                    <li class= "#"><a href="#" ><i class="bi bi-file-earmark-check"></i> Contas Pagas</a></li>
+                    <li><a href="#"><i class="bi bi-file-earmark-x"></i> Contas Atrasadas </a></li>
+                    <li><a href="#"><i class="bi bi-info-circle"></i> Ajuda </a></li>
+                </ul>
+              </nav>
+        </header>
+     
+        <section class="mainPerfil">
+            <div class="imgPerfilDiv">
+
+                 <div class="seta">
+                    <a class="backLink" href="home.html">
+                        <i class="bi bi-arrow-left-circle"></i>
+                    </a>
+
+                 </div>
+              
+
+                <div class="editImg">
+
+                    <img src="./assets/img/perfilPersona.svg" class="imgPerfil" alt="persona perfil">
+
+                           
+                     <div class="btnLink">
+                        <a href="#" class="btnEditar"> <i class="bi bi-camera" id="camera"></i> </a>
+                    </div>
+             
+                </div> 
+               
+          
+              
+            </div>
+             
+
+            <div class="wrapper">
+
+                <!--Formulário de acesso -->
+
+                <form action="" method="post" id="form" class="form">
+                 
+                    <div class="input-box">
+                        <label for="username"> Nome </label> 
+                        <input type="text" id="username" name="username" value="Marcos " readonly/>
+                        <i class="fa-regular fa-user"></i>
+                      
+                        
+                    </div>     
+                                
+
+                    <div class="input-box">
+                        <label for="email"> E-mail</label>
+                        <input type="email" id="email" name="name" value="marcos@gmail.com" autocomplete="email" readonly />
+                        <i class="fa-regular fa-user" ></i>
+                     
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password"> Senha</label>
+                        <input type="password" id="password" name="password" value="H123456!"  readonly />
+                        <i id="btnSenha" class="bi bi-eye" onclick="showing()"></i>
+                        
+                    </div>
+
+                    
+                    <div class="btnDiv">
+                        <button class="btn"> Editar </button>
+                    </div>
+                      
+                        <!-- Acesso alternativo -->
+                    <div class="alternativeAccessDiv" >
+                        <p> Víncular conta </p>
+                        <ul class="secundaryAccess">
+                            <li><a href="#"><img src="./assets/img/socialMediaGoogle.svg" alt="acesso registro google"></a> </li>
+                            <li><a href="#"><img src="./assets/img/socialMediaFacebbok.svg "" alt= "acesso registro facebook"></a> </li>
+                            <li><a href="#"><img src="./assets/img/socialMediaApple.svg" alt="acesso registro apple"></a> </li>
+                        </ul> 
+                             
+                    </div>
+                       
+                    <div class="exit">
+                      <a href="/index.html" class="exitLink">
+                        <i class="bi bi-door-open"></i>
+                        <p> Sair</p>
+                      </a> 
+
+                    </div>
+                    
+                 
+                
+                </form>
+            </div>
+
+
+        </section>
+        
+          <script src="./scripts/navBar.js"></script>
+          <script src="./scripts/scriptSenha.js"></script>
+
+    </body>
+</html>
+            

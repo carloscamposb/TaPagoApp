@@ -35,6 +35,7 @@
 /* Estilização da iamgem do perfil */
 .imgPerfil{
   width: 130px;
+  height: 130px;
 }
 
 
@@ -91,9 +92,9 @@
 .notificationAdded .lembreteAdd{
   position: absolute;
   right: 0;
-  top: 0;
-  padding: 20px 5px  0px 0px;
-  width: 60px;
+  top: 10px;
+  padding: 20px 15px  0px 0px;
+  width: 55px;
 }
 
 /* estilização do texto de notificações adicionadas */
@@ -109,7 +110,7 @@
 .lembreteNumber{
   font-size: 45px;
   font-weight: 600;
-  color: var(--white-color);
+  color: var(--text-color-dark);
   padding-right: 33px;
   z-index: 1;
 
@@ -131,6 +132,7 @@
 /* Estilização das imagens da sessão acessar novas notificações, contas pagas e contas atrasadas */
 .cardContaner img{
  width: 80px;
+ height: 80px;
  padding: 0px 8px;
  display: block;
  margin: 0 auto;
