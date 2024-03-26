@@ -73,7 +73,20 @@
 
                     
                     <div class="btnDiv">
-                        <button class="btn"> Cadastrar </button>
+                        <button id="abrirModal" class="btn"> Cadastrar </button>
+                  
+                    <dialog id="modal">
+                        <div class="title">
+                            <h2> Cadastro Finalizado</h2>
+                        </div>
+                        <p class="text">Parabéns! Seu cadastro foi realizado com sucesso!</p>
+                         
+                        <div class="buttonDiv">
+                            <button id="closeButton">Voltar</button> 
+                        </div>
+                
+                    </dialog>
+                    
                     </div>
                       
                         <!-- Acesso alternativo -->
@@ -99,6 +112,7 @@
 <!-- Link de JS -->
     <script src="./scripts/validacaoCadastro.js"></script>
    <script src="./scripts/scriptSenha.js"></script>
+
     
 
 </body>

@@ -7,21 +7,11 @@ const senhaConfirme = document.getElementById("passwordConfirmation");
 form.addEventListener("submit", (event) =>{
     event.preventDefault();
 
-
-    checkInputUsername();
-    checkInputEmail();
-    checkInputPassword();
-    checkInputPasswordConfirmation();
-
-
-// função que verifica cada input
-    checkForm(); 
-    
-   
-// ;
-
-} )
-
+    // Verifica todos os campos antes de exibir o popup
+    if (checkForm()) {
+        modal.showModal();
+    }
+});
 
 function checkInputUsername(){
     const usernameValue=username.value;
@@ -34,7 +24,6 @@ function checkInputUsername(){
     }
 }
 
-
 function checkInputEmail(){
     const emailValue=email.value;
 
@@ -44,11 +33,7 @@ function checkInputEmail(){
         const formItem= email.parentElement;
         formItem.className="input-box"
     }
-
- 
 }
-
-
 
 function checkInputPassword(){
     const passwordValue=password.value;
@@ -63,10 +48,7 @@ function checkInputPassword(){
         const formItem = senha.parentElement;
         formItem.className = "input-box";
     }
-   
 }
-
-
 
 function checkInputPasswordConfirmation(){
     const passwordValue=password.value;
@@ -80,15 +62,9 @@ function checkInputPasswordConfirmation(){
         const formItem= passwordConfirmation.parentElement;
         formItem.className="input-box"
     }
-    
-     
-   
 }
 
-
-
-// funcão para inibir envio quando houver erros no cadastro
-
+// Verifica todos os campos do formulário
 function checkForm(){
     checkInputUsername();
     checkInputEmail();
@@ -97,35 +73,35 @@ function checkForm(){
 
     const formItems=form.querySelectorAll(".input-box")
     
-    // array para verificação. Every verifica se toda a array passa na condição imposta
+    // Verifica se todos os campos estão corretos
     const isValid = [...formItems].every((item)=>{
-        return item.className === "input-box"
-
+        return item.className === "input-box";
     }); 
     
-    if(isValid){
-        alert('Cadastro realizado com sucesso!')
-
-        window.location.href = "index.html"
-    }
+    return isValid;
 }
 
-
-
-
-
-
-
-// função do erro
 function errorInput(input,message){
     const formItem=input.parentElement;
     const textMessage=formItem.querySelector("a")
 
     textMessage.innerText=message;
 
-    formItem.className = "input-box error"
-
+    formItem.className = "input-box error";
 }
+
+// Fechar o popup
+closeButton.addEventListener('click', () =>{
+    modal.close();
+    
+    window.location.href = "index.html";
+});
+
+
+
+
+
+
 
 
 

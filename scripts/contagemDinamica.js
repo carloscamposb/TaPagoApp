@@ -1,5 +1,5 @@
 let valueDisplay=document.querySelectorAll(".lembreteNumber");
-let interval=4000;
+let interval=3500;
 
 valueDisplay.forEach(valueDisplay=>{
     let startValue =0;

@@ -55,7 +55,7 @@
      <div class="wrapper">
 
         <!--Formulário de acesso -->
-        <form action="" method="post">
+        <form action="" method="post" id="form" class="form">
             <div class="fields">
 
                 <div class="subtitle">
@@ -64,14 +64,14 @@
                     
                 <div class="groupEdit">
                     <div class="input-box input-box-edit">
-                        <label for="dateInicial">Data inicial</label>
+                        <label for="dateInicial">Data inicial </label>
                         <input type="date" name="date" id="dateInicial" required min="2024-01-01"  />
                     
                     </div>
                     
                     <div class="input-box input-box-edit">
                         
-                        <label for="dateFinal">Data final</label>
+                        <label for="dateFinal">Data final </label>
                         <input type="date" name="date" id="dateFinal" required />
                     
                     </div>
@@ -91,7 +91,7 @@
                 
                     <div class="input-box input-box-edit">
                     
-                        <label for="tempoFinal">Data final</label>
+                        <label for="tempoFinal">Data final  </label>
                         <input type="time" name="time" id="tempoFinal" required />
                 
                     </div> 
@@ -102,7 +102,7 @@
                 <h3> Notificações Semanais</h3>
             </div>
            
-            <div class="input-box box-plataforma">
+            <div class="input-box box-plataforma" id="plataforma">
                 <select name="plataforma" class="plataforma" required="required">
                     <option value="" disabled selected>Selecione</option>
                     <option value="Não notificar">Não notificar</option>
@@ -115,8 +115,27 @@
 
             
                 <div class="btnDiv">
-                    <a href="#" class="btn btnBorder"> Refazer </a>
-                    <a href="/configAdicao.html" class="btn btnFull"> Finalizar </a>
+                    <button class="btn btnBorder"> Refazer </button>
+
+                    <div>
+                        <button class="btn btnFull" id="abrirModal"> Finalizar </button>
+                      
+                        <dialog id="modal" >
+                            <div class="title">
+                                <h2> Notificações Configuradas</h2>
+                            </div>
+                            <p class="text"> O que você gostaria de fazer agora?</p>
+                             
+                            <div class="buttonDiv">
+                                <button id="backAdd">Adicionar +</button>
+                                <button id="editButton">Reeditar</button>
+                                <button id="closeButton">Encerrar</button>  
+                            </div>
+                    
+                        </dialog>
+                    
+                    </div>
+                    
                 </div>
         
                
@@ -128,6 +147,7 @@
     <!-- link de JS -->
     
     <script src="./scripts/navBar.js"></script>
+    <script src="./scripts/popUp.js"></script>
 
 </body>
 

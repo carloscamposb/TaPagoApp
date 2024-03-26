@@ -50,20 +50,31 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+// Abre e fecha os cards e troca o icone de seta
 
-    // Abrir e fechar cards do carrosel
-    function toggleCard(iconId, cardClass) {
-        var icon = document.getElementById(iconId);
-        icon.addEventListener('click', function() {
-            var card = document.querySelector('.' + cardClass);
-            card.classList.toggle('active');
-        });
-    }
-    
-    toggleCard('arrow', 'card');
-    toggleCard('arrow1', 'card1');
-    toggleCard('arrow2', 'card2');
-    toggleCard('arrow3', 'card3');
+function toggleCard(iconId, cardClass) {
+    var icon = document.getElementById(iconId);
+    var card = document.querySelector('.' + cardClass);
+
+    icon.addEventListener('click', function() {
+        card.classList.toggle('active');
+
+        // Alterna entre as classes de ícone de seta dependendo do estado do cartão
+        if (card.classList.contains('active')) {
+            icon.classList.remove('bi-arrow-up-circle');
+            icon.classList.add('bi-arrow-down-circle');
+        } else {
+            icon.classList.remove('bi-arrow-down-circle');
+            icon.classList.add('bi-arrow-up-circle');
+        }
+    });
+}
+
+toggleCard('arrow', 'card');
+toggleCard('arrow1', 'card1');
+toggleCard('arrow2', 'card2');
+toggleCard('arrow3', 'card3');
+
 
 
 

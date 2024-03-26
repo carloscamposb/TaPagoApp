@@ -7,9 +7,12 @@ cards.forEach(card => {
         // Remova a classe "active" de todos os cards
         cards.forEach(card => {
             card.classList.remove('active');
+          
         });
         
         // Adicione a classe "active" apenas ao card clicado
         card.classList.add('active');
+       
     });
 });
+

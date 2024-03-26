@@ -219,21 +219,65 @@ input:-webkit-autofill {
     
   }
   
-  /* ==== Estilização da area de primeiro acesso que leva à página de cadastro ==== */
-  .firstAccessDiv{
-    display:flex ;
-    align-items: center;
+  dialog::backdrop{
+    background-color: #00000099;
+  }
+
+  dialog{
+    border:1px solid var(--text-color-soft); 
+    background:var(--primary-color);
+    border-radius: 8px;
+    margin: 200px auto;
+    width: 500px;
+    position: relative;
+  }
+
+  dialog .title{
+    width: 100%;
+    display: flex;
     justify-content: center;
+    background-color: var(--detail-color);
+  }
+
+  .title h2{
+    padding: 10px;
+    font-family: var(--titulos);
+  }
+
+  dialog .text{
     font-size: .9rem;
-    padding-top: 20px;
-    color: var(--text-color-dark);
-    text-decoration: underline;
-    color: #EB9B15;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .buttonDiv{
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content:center;
+    padding: 5px 0px 10px 0px;
+  }
+
+ button#closeButton{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border:none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--detail-color);
     font-family: var(--titulos);
     font-weight: 600;
   }
+
+
+
+
+
+  /* ==== Estilização da area de primeiro acesso que leva à página de cadastro ==== */
+   
   
   /* ==== Responsividade ==== */
   
    /* ==== FIM ==== */
   
+
+
