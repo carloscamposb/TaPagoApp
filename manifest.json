@@ -51,15 +51,17 @@
         "src": "assets/icon/180.png",
         "sizes": "180x180",
         "type": "image/png",
-        "purpose": "any maskable"
-
+        "purpose": "maskable"
       },
+
+      
       {
         "src": "assets/icon/1024.png",
         "sizes": "1024x1024",
         "type": "image/png"
       }
     ],
+    
     "start_url": "index.html",
     "display": "standalone",
     "orientation": "portrait",
