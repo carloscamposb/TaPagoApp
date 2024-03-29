@@ -300,7 +300,7 @@ input:-webkit-autofill {
   
   /* Estilização da logo */
 .logoTitle{
-  font-size:3.85rem ;
+  font-size:3rem ;
 }
 
 
@@ -318,7 +318,7 @@ input:-webkit-autofill {
 
 
 }
-@media (min-width: 700px) {
+@media (min-width: 740px) {
 
   
 /* conteúdo capa*/
@@ -330,11 +330,11 @@ html,body{
 
 
 .logo{
-  background-color: #EFA40F;
- position: relative;
- padding: 80px;
- height: 60vh;
- border-radius: 70%;
+  background-color: var(--detail-color);
+  background-image: url(../assets/img/circle8.svg) ;
+  background-repeat: no-repeat;
+  padding:70px 50px;
+  border-radius: 50%;
 }
 
 
@@ -350,16 +350,7 @@ html,body{
     width: 96vw;
   }
 
-  /* Sessão da imagem da capa*/
-
-
-
-
-  /* texto do subtitulo */
-  .subtitulo {
-    font-size: 1.5rem;
-  }
-
+  
   /* Formulario:Geral */
   .wrapper {
     margin-top: 20px;
@@ -493,9 +484,9 @@ html,body{
 @media (min-width: 1500px){
 
   .logo{
-    height: 45vh;
-    padding: 50px 50px 0px;
-    margin-top: 20px;
+    background-color: var(--detail-color);
+    background-image: url(../assets/img/circle8.svg) ;
+    background-repeat: no-repeat;
    }
 
 }
@@ -516,21 +507,21 @@ html,body{
 
   .logo{
    height: 50vh;
-   padding: 50px 50px 0px;
+   padding: 60px 50px 0px;
    margin-top: 20px;
   }
   
   
     /* Estilização da logo */
 .logoTitle{
-  font-size:6.2rem ;
+  font-size:5.2rem ;
   margin-top: 30px;
 }
 
 
 /* Estilização do subtitulo */
 .subtitulo {
-  font-size: 1.82rem;
+  font-size: 1.80rem;
 }
 
 
