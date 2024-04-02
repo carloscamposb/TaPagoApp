@@ -33,7 +33,6 @@
                     <li><a href="/adicionar.html"><i class="bi bi-file-earmark-plus"></i> Adicionar</a></li>
                     <li class= "#"><a href="#" ><i class="bi bi-file-earmark-check"></i> Contas Pagas</a></li>
                     <li><a href="#"><i class="bi bi-file-earmark-x"></i> Contas Atrasadas </a></li>
-                    <li><a href="#"><i class="bi bi-info-circle"></i> Ajuda </a></li>
                 </ul>
               </nav>
         </header>
@@ -64,66 +63,97 @@
               
             </div>
              
+            <section class="cardInfo" id="card1">
+               <div class="menuTitle">
+                <h2 class="titleCard">Dados Pessoais</h2> 
+                <i class="bi bi-arrow-down-circle btnSeta"  id= "arrow"></i>
+               </div>
+             
 
-            <div class="wrapper">
+                <div class="wrapper">
 
-                <!--Formulário de acesso -->
+                    <!--Formulário de acesso -->
 
-                <form action="" method="post" id="form" class="form">
-                 
-                    <div class="input-box">
-                        <label for="username"> Nome </label> 
-                        <input type="text" id="username" name="username" value="Marcos " readonly/>
-                        <i class="fa-regular fa-user"></i>
-                      
+                    <form action="" method="post" id="form" class="form">
+                    
+                        <div class="input-box">
+                            <label for="username"> Nome </label> 
+                            <input type="text" id="username" name="username" value="Marcos " readonly/>
+                            <i class="fa-regular fa-user"></i>
                         
-                    </div>     
+                            
+                        </div>     
+                                    
+
+                        <div class="input-box">
+                            <label for="email"> E-mail</label>
+                            <input type="email" id="email" name="name" value="marcos@gmail.com" autocomplete="email" readonly />
+                            <i class="fa-regular fa-user" ></i>
+                        
+                        </div>
+
+                        <div class="input-box">
+                            <label for="password"> Senha</label>
+                            <input type="password" id="password" name="password" value="H123456!"  readonly />
+                            <i id="btnSenha" class="bi bi-eye" onclick="showing()"></i>
+                            
+                        </div>
+
+                        
+                        <div class="btnDiv">
+                            <button class="btn"> Editar </button>
+                        </div>
+                        
+                            <!-- Acesso alternativo -->
+                        <div class="alternativeAccessDiv" >
+                            <p> Víncular conta </p>
+                            <ul class="secundaryAccess">
+                                <li><a href="#"><img src="./assets/img/socialMediaGoogle.svg" alt="acesso registro google"></a> </li>
+                                <li><a href="#"><img src="./assets/img/socialMediaFacebbok.svg "" alt= "acesso registro facebook"></a> </li>
+                                <li><a href="#"><img src="./assets/img/socialMediaApple.svg" alt="acesso registro apple"></a> </li>
+                            </ul> 
                                 
-
-                    <div class="input-box">
-                        <label for="email"> E-mail</label>
-                        <input type="email" id="email" name="name" value="marcos@gmail.com" autocomplete="email" readonly />
-                        <i class="fa-regular fa-user" ></i>
-                     
-                    </div>
-
-                    <div class="input-box">
-                        <label for="password"> Senha</label>
-                        <input type="password" id="password" name="password" value="H123456!"  readonly />
-                        <i id="btnSenha" class="bi bi-eye" onclick="showing()"></i>
+                        </div>
                         
-                    </div>
-
                     
-                    <div class="btnDiv">
-                        <button class="btn"> Editar </button>
-                    </div>
-                      
-                        <!-- Acesso alternativo -->
-                    <div class="alternativeAccessDiv" >
-                        <p> Víncular conta </p>
-                        <ul class="secundaryAccess">
-                            <li><a href="#"><img src="./assets/img/socialMediaGoogle.svg" alt="acesso registro google"></a> </li>
-                            <li><a href="#"><img src="./assets/img/socialMediaFacebbok.svg "" alt= "acesso registro facebook"></a> </li>
-                            <li><a href="#"><img src="./assets/img/socialMediaApple.svg" alt="acesso registro apple"></a> </li>
-                        </ul> 
-                             
-                    </div>
-                       
-                    <div class="exit">
-                      <a href="/index.html" class="exitLink">
-                        <i class="bi bi-door-open"></i>
-                        <p> Sair</p>
-                      </a> 
-
-                    </div>
+                        
                     
-                 
-                
-                </form>
-            </div>
+                    
+                    </form>
+                </div>
+            </section>
 
+            <section class="cardInfo" id="card2">
+               <div class="menuTitle">
+                <h2 class="titleCard">Tema</h2>
+                <i class="bi bi-arrow-down-circle btnSeta"  id= "arrow"></i>
+               </div>
+            
+                <p>Claro/Escuro</p> 
+              
+            </section>
+            
+            <section class="cardInfo" id="card3">
+                <div class="menuTitle">
+                    <h2 class="titleCard">Informações</h2>
+                    <i class="bi bi-arrow-down-circle btnSeta"  id= "arrow"></i>
+                </div>
+              
 
+             <a class="btnIbfo" href=""> <p>Finalidade do Ta Pago</p> </a> 
+             <a class="btnIbfo" href=""> <p>Funções do Ta Pago</p> </a> 
+             <a class="btnIbfo" href=""> <p>Meus dados no Ta Pago</p> </a> 
+
+            </section>
+            
+            <section class="exit">
+               
+                <a href="/index.html" class="exitLink">
+                    <i class="bi bi-door-open"></i>
+                    <p> Sair</p>
+                </a> 
+            </section>
+                    
         </section>
         
           <script src="./scripts/navBar.js"></script>

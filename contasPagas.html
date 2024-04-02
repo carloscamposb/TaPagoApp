@@ -32,25 +32,135 @@
                     <li><a href="/perfil.html"><i class="bi bi-file-person"></i> Perfil </a></li>
                     <li><a href="/adicionar.html"><i class="bi bi-file-earmark-plus"></i> Adicionar</a></li>
                     <li class="active"><a href="/contasPagas.html" ><i class="bi bi-file-earmark-check"></i> Contas Pagas</a></li>
-                    <li><a href="#"><i class="bi bi-file-earmark-x"></i> Contas Atrasadas </a></li>
-                    <li><a href="#"><i class="bi bi-info-circle"></i> Ajuda </a></li>
+                    <li><a href="/contasAtrasadas.html"><i class="bi bi-file-earmark-x"></i> Contas Atrasadas </a></li>
                 </ul>
               </nav>
         </header>
 
     <section class="mainPagas">
-       <div class="sessaoCards">
-
-
-        <!-- Grupo 1 -->
-            <div class="cardGroup">
-               
            
+        <form action="" method="post" id="form" class="form">
+         
+            <div class="input-box">
+                <input type="text" name="search" id="search" placeholder="Buscar..."/>
+                <i id="btnSenha" class="bi bi-search" onclick="showing()"></i>
             </div>
-    
-        
+        </form>
+
+        <div class="cardContas">
+            <div class="cardTop">
+                <h2 class="titleCardTop">Março/2024</h2>
+                
+                <div class="ArrowDown">
+                    <i class="bi bi-arrow-down-circle btnSeta"  id= "arrow"></i>
+                </div>
+            </div>
+           
+            <div class="cardContent">
+                
+                <ul class="infosCard">
+                    <li>
+                        <p class="markColor red"></p>
+                        <p> Nome:  <br> 
+                            <b>CELPE </b>  
+                        </p>
+                    </li>
+                    <li>Valor:  <br>
+                        <b>R$ 130,80</b> 
+                    </li>
+                    <li class="groupArquivo">
+                        <div>
+                            Validade:  <br>  
+                            <span><b>28/03/2024</b></span>
+                        </div>
+
+                        <div class="exitIcon">
+                            <i class="bi bi-x-circle"></i>
+                         
+                        </div> 
+                        
+                    </li>
+                    
+                </ul> 
+                <div class="cardImhg">
+                    <img class="imgDoc" src="./assets/img/contaImagem.svg" alt="">
+                </div>
+                
+            </div>
+           
+
+                
+            <div class="cardContent">
+                <ul class="infosCard">
+                    <li>
+                        <p class="markColor yellow"></p>
+                        <p> Nome:  <br> 
+                            <b>Itaú Card</b>  
+                        </p>
+                    </li>
+                    <li>Valor:  <br>
+                        <b>R$ 160,96</b> 
+                    </li>
+                    <li class="groupArquivo">
+                        <div>
+                            Validade:  <br>  
+                            <span><b>15/03/2024</b></span>
+                        </div>
+
+                        <div class="exitIcon">
+                            <i class="bi bi-x-circle"></i>
+                         
+                        </div> 
+                        
+                    </li>
+                    
+                </ul> 
+                <div class="cardImhg">
+                    <img class="imgDoc" src="./assets/img/imgItauConta.svg" alt="Conta no banco">
+                </div>
+                
+            </div>
+      
+
+
+            <div class="cardContent">
+                <ul class="infosCard">
+                    <li>
+                        <p class="markColor yellow"></p>
+                        <p> Nome:  <br> 
+                            <b>COMPESA </b>  
+                        </p>
+                    </li>
+                    <li>Valor:  <br>
+                        <b>R$ 60,80</b> 
+                    </li>
+                    <li class="groupArquivo">
+                        <div>
+                            Validade:  <br>  
+                            <span><b>10/03/2024</b></span>
+                        </div>
+
+                        <div class="exitIcon">
+                            <i class="bi bi-x-circle"></i>
+                         
+                        </div> 
+                        
+                    </li>
+                    
+                </ul> 
+                <div class="cardImhg">
+                    <img class="imgDoc" src="./assets/img/imgContaAgua.svg" alt="Conta de agua">
+                </div>
+              
+            </div>
+          
+
+
+
+
+           
         </div> 
-        
+    
     </section> 
        
 

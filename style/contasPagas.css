@@ -1,18 +1,68 @@
-
-html,body{
-    margin: 0;
-    background-image:  url(../assets/img/circle4.svg), url(../assets/img/circle4.svg) ;
-    background-size:  280px , 40px;
-    background-repeat: no-repeat;
-    background-position:  250% 520px, 30% 520px ; 
-    position: relative;
-  }
+:root {
+  --primary-color: #EDE9DD;
+  --white-color: #ffff;
+  --detail-color: #EFA40F;
+  --preenchimento-color: #e9e8e7;
+  --color-logo: #000000;
+  --detail-variation-dark:#ce7c01;
+  --gradient-color-orange: linear-gradient(98deg, #EB9B15 1.78%, #F6B704 87.54%);
+  --gradient-color-orange-soft: linear-gradient(98deg, #EB9B15 1.78%, #F6B704 87.54%);
+  --text-color-dark: #100f0f;
+  --text-color-soft: #201f1f;
+  --blocked-field:#ebe0ce;
+  --blocked-field-board:#BCB8B2;
   
+ 
+
+  --titulos: "Urbanist", sans-serif;
+  --textos: "Open Sans", sans-serif;
+}
+
 
  .mainPagas{
     margin-top: 150px;
  }
   
+
+ .input-box{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  margin: 0 auto 20px;
+ }
+
+ .input-box input {
+  width: 100%;
+  background: transparent;
+  font-size: 0.9rem;
+  font-family: var(--titulos);
+  color: var(--text-color-dark);
+  padding: 8px;
+  outline: none;
+  border: 1px solid var(--text-color-soft);
+  border-radius: 5px;
+  
+}
+
+.input-box i {
+  position: absolute;
+  right: 0px;
+  padding-right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+
+}
+
+
+
+ .cardContas{
+  padding: 10px 10px;
+  width: 320px;
+  margin: 0 auto;
+ }
 
  .cardContaner{
    display: flex;
@@ -21,3 +71,90 @@ html,body{
    gap: 20px;
    position: relative;
  }
+
+ .cardTop{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: var(--detail-color);
+  margin-bottom: 20px;
+  border-radius: 5px;
+ }
+
+ .cardTop .titleCardTop{
+ font-family: var(--titulos);
+ padding: 10px 10px;
+ font-size: 1.25rem;
+ }
+
+ .cardContent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+ }
+
+ .btnSeta{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 1.25rem;
+
+ }
+
+ .imgDoc{
+  height: 200px;
+  width: 200px;
+ }
+
+
+ .exitIcon{
+ display: flex;
+ width: 100%;
+ position: relative;
+}
+
+.markColor{
+  margin-bottom: 6px;
+  width: 40px;
+  height: 15px;
+  border-radius: 8px;
+
+}
+
+.markColor.red{
+  background-color: #E57435 ;
+}
+
+.markColor.yellow{
+  background-color: #E4A400 ;
+}
+
+.markColor.green{
+  background-color: #D2BE57 ;
+}
+
+
+
+
+.bi-x-circle{
+  font-size: 1.5rem;
+  margin-top: 10px;
+  padding: 4px 8px;
+  font-weight: 600;
+  bottom: 0;
+  left: 0;
+  background-color: var(--detail-color);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+
+
+}
+
+
+.infosCard li{
+  font-family: var(--titulos);
+  font-size: 1rem;
+}
