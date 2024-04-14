@@ -47,19 +47,17 @@
 
                  </div>
               
-
-                <div class="editImg">
-
-                    <img src="./assets/img/perfilPersona.svg" class="imgPerfil" alt="persona perfil">
-
-                           
-                     <div class="btnLink">
-                        <a href="#" class="btnEditar"> <i class="bi bi-camera" id="camera"></i> </a>
+                 <div class="editImg">
+                    <img src="./assets/img/perfilPersona.svg" class="imgPerfil" alt="persona perfil" id="profileImage">
+                    <div class="btnLink">
+                        <label for="file-upload">
+                            <a href="#" class="btnEditar">
+                                <i class="bi bi-camera" id="camera"></i>
+                            </a>
+                        </label>
+                        <input type="file" id="file-upload" style="display: none;" accept="image/*">
                     </div>
-             
-                </div> 
-               
-          
+                </div>
               
             </div>
              
@@ -158,7 +156,7 @@
         
           <script src="./scripts/navBar.js"></script>
           <script src="./scripts/scriptSenha.js"></script>
-
+          <script src="./scripts/fotoPerfil.js"></script>
     </body>
 </html>
             

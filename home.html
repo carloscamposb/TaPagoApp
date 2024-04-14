@@ -42,7 +42,7 @@
                   
                 <div class="imgPerfilDiv">
                    <div>
-                        <img src="./assets/img/perfilPersona.svg" class="imgPerfil" alt="persona perfil">
+                    <img src="./assets/img/perfilPersona.svg" class="imgPerfil" alt="persona perfil" id="profileImage">
                          <p class="textPerfil"> Olá, Marcos </p>
                     </div> 
                   
@@ -287,6 +287,18 @@
         <script src="./scripts/navBar.js"></script>
         <script src="./scripts/scriptCarrosel.js"></script>
         <script src="./scripts/contagemDinamica.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const profileImage = document.getElementById('profileImage');
+    
+                // Verificar se existe uma imagem armazenada no localStorage
+                const storedImage = localStorage.getItem('profileImage');
+                if (storedImage) {
+                    profileImage.src = storedImage; // Atualizar a imagem de perfil com a imagem armazenada
+                }
+            });
+        </script>
         
     </body>
 </html>
