@@ -26,7 +26,6 @@ self.addEventListener('install', event => {
     
         './assets/img/circle5.svg',
      
-
         './assets/icon/29.png',
         './assets/icon/40.png',
         './assets/icon/57.png',
