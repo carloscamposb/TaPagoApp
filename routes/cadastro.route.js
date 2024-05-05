@@ -20,17 +20,14 @@ cadastroRoutes.route('/add').post(function (req, res) {
 });
 
 // api to get cadastros
-cadastroRoutes.route('/').get(function (req, res) { //aqui só precisa dar a resposta quanto a lista de usuários
-  Cadastro.find(function (err, cadastros){ //multiplos resultados você coloca o s no final
-    
-    //aqui é só outra forma de tratamento de rro mas entrega o mesmo resultado. Recomendado o uso de 'than e catch'
-    if(err){
-      res.status(400).send({'status': 'failure','mssg': 'Something went wrong'});
-    }
-    else {
-      res.status(200).json({'status': 'success','cadastros': cadastros});
-    }
-  });
+cadastroRoutes.route('/').get(function (req, res) { // aqui só precisa dar a resposta quanto à lista de usuários
+  Cadastro.find() // múltiplos resultados, você coloca o 's' no final
+    .then(cadastros => { // aqui é só outra forma de tratamento de erro, mas entrega o mesmo resultado. Recomendado o uso de 'then' e 'catch'
+      res.status(200).json({'status': 'success', 'cadastros': cadastros});
+    })
+    .catch(err => {
+      res.status(400).json({'status': 'failure', 'mssg': 'Something went wrong'});
+    });
 });
 
 // api to get a especif cadastro (tudo que tem id tem que trocar pelo do usuario especifico)
@@ -46,36 +43,40 @@ cadastroRoutes.route('/cadastro/:id').get(function (req, res) { //aqui precisa o
   });
 });
 
-// api to update route
 cadastroRoutes.route('/update/:id').put(function (req, res) {
-    Cadastro.findById(req.params.id, function(err, cadastro) { //passa antes para saber se aquele usario realmente existe ou não
-    if (!cadastro){
-      res.status(400).send({'status': 'failure','mssg': 'Unable to find data'});
-    } else {
-      // modo diferente que pega as informações no corpo da requisição
-        cadastro.username= req.body.username;
+  Cadastro.findById(req.params.id)
+    .then(cadastro => {
+      if (!cadastro) {
+        res.status(400).json({'status': 'failure','mssg': 'Unable to find data'});
+      } else {
+        cadastro.username = req.body.username;
         cadastro.email = req.body.email;
         cadastro.password = req.body.password;
         cadastro.passwordConfirmation = req.body.passwordConfirmation;
         
-        //O ideal aqui seria passar o tratamento através do then catch como não tem se tiver erro vai mostrar o erro generico que é 500
-        cadastro.save().then(business => {
-          res.status(200).json({'status': 'success','mssg': 'Update complete'});
-      })
-    }
-  });
+        return cadastro.save();
+      }
+    })
+    .then(() => {
+      res.status(200).json({'status': 'success','mssg': 'Update complete'});
+    })
+    .catch(err => {
+      res.status(500).json({'status': 'failure', 'mssg': err.message});
+    });
 });
 
-// api for delete
 cadastroRoutes.route('/delete/:id').delete(function (req, res) {
-  Cadastro.findByIdAndRemove({_id: req.params.id}, function(err,){
-    if(err){
-      res.status(400).send({'status': 'failure','mssg': 'Something went wrong'});
-    }
-    else {
-      res.status(200).json({'status': 'success','mssg': 'Delete successfully'});
-    }
-  });
+  Cadastro.findByIdAndDelete({_id: req.params.id})
+    .then(deletedCadastro => {
+      if (!deletedCadastro) {
+        res.status(400).json({'status': 'failure', 'mssg': 'Unable to find data to delete'});
+      } else {
+        res.status(200).json({'status': 'success', 'mssg': 'Delete successful'});
+      }
+    })
+    .catch(err => {
+      res.status(500).json({'status': 'failure', 'mssg': err.message});
+    });
 });
 
-module.exports = cadastroRoutes; //exporta esquema de rota
+module.exports = cadastroRoutes;

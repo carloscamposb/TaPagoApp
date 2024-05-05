@@ -6,8 +6,8 @@ mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 // aqui onde tem localhost você coloca o numero do servidor do seu mongoDB : 27017 é a porta comum do mongo / o nome do banco de dados
-mongoose.connect('mongodb+srv://carloscamposbn:wvjYZk2womNpnL6t@cluster0.c3npqki.mongodb.net/TaPago', { useNewUrlParser: true }).then(
-  () => { console.log('Database is connected') },
+mongoose.connect('mongodb://127.0.0.1:27017/TaPago')
+.then(() => { console.log('Database is connected') },
   err => { console.log('Can not connect to the database'+ err)}
 );
 
