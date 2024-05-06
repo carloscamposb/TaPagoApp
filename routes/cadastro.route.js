@@ -31,7 +31,7 @@ cadastroRoutes.route('/').get(function (req, res) { // aqui só precisa dar a re
 });
 
 // api to get a especif cadastro (tudo que tem id tem que trocar pelo do usuario especifico)
-cadastroRoutes.route('/cadastro/:id').get(function (req, res) { //aqui precisa olhar para o que esta chegando
+cadastroRoutes.route('/:id').get(function (req, res) { //aqui precisa olhar para o que esta chegando
   let id = req.params.id; //pega os parametros da requisição passa pelo cabeçalho
   Cadastro.findById(id, function (err, cadastro){ //passa o id do usuario
     if(err){
